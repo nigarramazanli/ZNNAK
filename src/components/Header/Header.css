@@ -1,0 +1,152 @@
+header{
+    max-width: 1920px;
+    margin-left: auto;
+margin-right: auto;
+justify-content: space-around;
+}
+.header-bar{
+    background: #7E33E0;
+   
+}
+.little-header-bar
+{
+    height: 44px;
+    max-width: 1177px;
+    display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   justify-content: space-between;
+}
+.contacts{
+    max-width: 400px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    
+}
+.contact{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+
+p{
+    font-weight: 600;
+font-size: 16px;
+line-height: 16px;
+color: #F1F1F1;
+}
+.message
+{
+width: 14px;
+height: 11px;
+}
+
+.phone{
+width: 16px;
+height: 16px;
+}
+.user-char{
+    max-width: 260px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 19px;
+}
+.vector{
+    width: 11px;
+    height: 6px;
+}
+.heart , .user {
+    width: 16px;
+    height: 16px;
+}
+.korzina
+{
+    width: 17.5px;
+    height: 17.5px;
+}
+.user-act{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.big-navbar
+{
+    height: 78px;
+    padding: 19px;
+
+}
+ .navbar{
+    max-width: 1177px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+ .header-and-nav{
+    display: flex;
+    flex-direction: column;
+    height: 122px;
+ }
+ .hekto{
+    height: 34px;
+    width: 98px;
+ }
+ .little-vector{
+    width: 8px;
+    height: 4px;
+    color: #FB2E86;
+ }
+ .nav-link {
+    text-decoration: none;
+    font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #0D0E43;
+ }
+ .navlink{
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #FB2E86;
+text-decoration: none;
+display: flex;
+    gap: 4px;
+    align-items: center;
+
+ }
+
+ nav{
+    display: flex;
+    gap: 35px;
+ }
+ .lupa{
+    width: 20px;
+    height: 20px;
+ }
+ .lupa-button{
+    
+background-color: 
+#FB2E86;
+border: 0;
+width: 51px;
+height: 38px;
+
+
+ }
+
+ .search{
+    height: 36px;
+width: 300px;
+border: 2px solid #E7E6EF;
+ }
+
+ .search-button{
+    display: flex;
+    justify-content: center;
+ }
