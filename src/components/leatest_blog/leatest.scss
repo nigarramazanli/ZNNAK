@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Josefin";
+    src: url("../font/JosefinSans-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Lato-Regular;
+    src: url("../font/Lato-Regular.ttf");
+}
+$font-family:Josefin;
+$font-family2:Lato-Regular;
+$color:#151875;
+
+.leatest{
+    margin:50px;
+    .header-title{
+        text-align: center;
+        padding-bottom: 39px;
+        font-family: $font-family;
+        color: $color;
+    }
+    .card-group{
+        display: flex;
+        gap:56px;
+        justify-content: center;
+    .card{
+        padding-bottom: 40px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 10px;
+        .card-img-top{
+            border-radius: 10px;
+        }
+        .card-about{
+            display: flex;
+            .card-name{
+                padding:20px 14px;
+                font-family: $font-family;
+                color: $color;
+            }
+            .card-name:before{
+                content: "";
+                display: block;
+                background: url(./photo/Vector1.svg) no-repeat;
+                float: left;
+                width: 15px;
+                height: 15px;
+            }
+            .card-date{
+                padding:20px 14px;
+                font-family: $font-family;
+                color: $color;
+            }
+            .card-date:before{
+                content: "";
+                display: block;
+                background: url(./photo/Vector2.svg) no-repeat;
+                float: left;
+                width: 15px;
+                height: 15px;
+            }
+        }
+        .card-body{
+            margin-left: 20px;
+            .card-title{
+                font-family: $font-family;
+                color: $color;
+                
+            }
+            .card-title:hover,.read-more:hover{
+                color: #FB2E86;
+            }
+            .card-text{
+                font-family: $font-family2;
+                font-weight: 400;
+                line-height: 30px;
+                color: #72718F;
+            }
+            .read-more{
+                font-family: $font-family2;
+                color: #151875;
+            }
+        }
+    }
+    }
+}
+
