@@ -1,4 +1,5 @@
 import './App.css';
+import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { Leatest } from './components/leatest_blog/leatest';
 import { Trending } from './components/trending_product/trending';
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Trending />
       <Leatest />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,181 @@
+
+@font-face {
+   font-family: "Josefin";
+   src: url("../font/JosefinSans-VariableFont_wght.ttf");
+}
+@font-face {
+   font-family: 'Lato';
+   src: url("../font/Lato-Black.ttf");
+}
+
+
+
+footer{
+margin-left: auto;
+margin-right: auto;
+background: #EEEFFB;
+}
+.foot-main{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+}
+.foot-first{
+   height: 480px;
+   max-width: 1304px;
+
+   display: flex; 
+   margin-left: auto;
+   margin-right: auto;
+   justify-content: space-between;
+   
+}
+
+.foot-part-one{
+    width: 408px;
+
+    margin-top: 95px
+    }
+.two-three-four{
+    width: 694px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px ;
+    margin-right: 91px;
+}
+.foot-part-two{
+    width: 182px;
+
+    }
+.foot-part-three{
+     width: 152px;
+  
+    }
+    .foot-part-four{
+        width: 194px;
+
+       }
+
+.inpone
+{
+    background: #FFFFFF;
+    opacity: 0.45;
+    height: 44px;
+    width: 240px;
+    padding-left: 20px;
+    border: none;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #8A8FB9;
+
+}
+.butone{
+    background: #FB2E86;
+border-radius: 3px;
+border: none;
+height: 44px;
+width: 135px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #EEEFFB;
+margin-left: 5px;
+}
+.hektoone{
+    height: 38px;
+width: 110px;
+margin-bottom: 31px;
+}
+.formone{
+border-radius: 3px;
+background: #FFFFFF;
+display: flex;
+align-items: center;
+margin-bottom: 25px;
+}
+
+.contactinfo , .address{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #8A8FB9;
+}
+.contactinfo{
+    margin-bottom: 10px;
+}
+
+.blackpart
+{
+    margin-bottom: 42px;
+    font-family: 'Josefin Sans';
+font-size: 22px;
+line-height: 26px;
+
+color: #000000;
+}
+
+.textpart{
+    margin: bottom 21px;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #8A8FB9;
+}
+.foot-second{
+   
+    background-color: rebeccapurple;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.foot-second-main
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rights{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+color: #9DA0AE;
+}
+
+.ikons{
+    height: 19.417476654052734px;
+    width: 80px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 160px;
+    
+}
+.ikon{
+    height: 19.417476654052734px;
+width: 19.417476654052734px;
+border-radius: 0px;
+
+}
+
+.foot-second-root{
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
