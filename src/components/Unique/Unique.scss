@@ -1,0 +1,135 @@
+
+@font-face {
+    font-family: "Josefin";
+    src: url("../font/JosefinSans-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Lato-Regular;
+    src: url("../font/Lato-Regular.ttf");
+}
+
+
+
+.unique{
+    background: #F1F0FF;
+    margin-bottom: 132px;
+    height: 580px;
+    display: flex;
+    align-items: center;
+
+}
+.unique-main{
+    max-width: 1065px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 550px;
+    display: flex;
+    align-items: center;
+  
+}
+.furniture{
+    height: 550px;
+    width: 558px;
+    border-radius: 0px;
+}
+
+.information{
+    width: 507px;
+    height: 328px;
+    margin-bottom: 97px;
+}
+
+.unique-features{
+    font-family: 'Josefin Sans';
+font-size: 35px;
+line-height: 46px;
+letter-spacing: 0.015em;
+color: #151875;
+margin: 0;
+margin-bottom: 29px;
+}
+
+
+.cyan , .blue , .red{
+    height: 11px;
+    width: 11px;
+}
+ .unique-text-one , .unique-text-two , .unique-text-three{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+letter-spacing: 0.015em;
+color: #ACABC3;
+margin: 0;
+
+ }
+ .unique-text-one , .unique-text-three{
+
+    line-height: 21px;
+ }
+ .unique-text-two{
+    line-height: 28px;
+ }
+ .button-and-value{
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .button-add{
+    width: 157px;
+    height: 45px;
+    background: #FB2E86;
+    border-radius: 2px ;
+    border: none;
+    font-family: 'Josefin Sans';
+font-size: 17px;
+line-height: 20px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+text-align: center;
+ }
+
+ .brend{
+    font-family: 'Josefin Sans';
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em; 
+    color: #151875;
+    margin: 0;
+ }
+
+ .value{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #151875;
+    margin: 0;
+ }
+ .brend-value{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+ }
+
+ .for-margin{
+    margin-bottom: 13px;
+    display: flex;
+    gap: 12px;
+
+ }
+ .for-margin-two{
+    margin-bottom: 38px;
+    display: flex;
+    gap: 12px;
+ }
+
+ .red ,.cyan{
+    margin-top: 3px;
+ }
+ .blue{
+    margin-top: 9px;
+ }
