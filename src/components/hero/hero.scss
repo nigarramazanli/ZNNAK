@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Josefin";
+    src: url("../font/JosefinSans-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Lato;
+    src: url("../font/Lato-Black.ttf");
+}
+$font-family:Josefin;
+$font-family2:Lato;
+
+.hero{
+    background-color: #F2F0FF;
+    display: flex;
+    margin:auto ;
+    height: 764px;
+    gap:32px;
+    .left{
+        margin-left: auto;
+        .lamp{
+            position: absolute;
+        }
+        .ellipse-pink{
+            position: absolute;
+            padding-top:503px;
+            padding-left:114px;
+        }
+        .shop{
+            position: relative;
+            padding-left: 300px;
+            padding-top: 203px;
+            .text-box{
+                .first-text{
+                    color: #FB2E86;
+                    font-family: $font-family2;
+                }
+                .title{
+                    font-family: $font-family;
+                    font-size: 53px;
+                }
+                .second-text{
+                    color:#8A8FB9;
+                    font-family: $font-family2;
+                    font-size: 16px;
+                    line-height: 128%;
+                }
+            }
+            .pink-button{
+                background-color: #FB2E86;
+                border-radius: 2px;
+                border-color: #FB2E86;
+                p{
+                    color: white;
+                    font-family: $font-family;
+                    font-size: 17px;
+                    padding:16px 40px;
+                    margin: 0;
+                }
+            }
+            .pink-button:hover{
+                background-color: white;
+                p{
+                    color:#FB2E86
+                }
+            }
+        }
+    }
+    .right{
+        position: relative;
+        margin-right: auto;
+        margin-top: 39px;
+        .armchair-blog{
+            margin-right: 70px;
+            .armchair{
+                position: absolute;
+                z-index: 2;
+                padding-top: 66px;
+            }
+            .ellipse-60{
+                position: absolute;
+                padding-left: 67px;  
+            }
+            .ellipse-61{
+                position: absolute;
+                z-index: 1;
+                padding-top: 38px;
+            }
+            .vector-blue{
+                position: relative;
+                z-index: 2;
+                padding-left: 547px;
+                padding-top: 39px;
+                .vector{
+                    position: absolute;
+                    width:138px;
+                    height: 138px;
+                }
+                .vector-text{
+                    position: relative;
+                    font-family:$font-family ;
+                    color: white;
+                    font-size: 35px;
+                    padding-left: 35px;
+                    line-height: 44px;
+                }
+            }
+        }
+    }
+}
