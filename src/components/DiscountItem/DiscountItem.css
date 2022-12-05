@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+ box-sizing: border-box;
+ padding: 0;
+
+}
+.discount-general-container{
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.discount-general{
+    max-width: 1214px;
+    height: 665px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 42px;
+    line-height: 49px;
+    color: #151875;
+    font-family: 'Josefin Sans'; 
+}
+.three-phrases{
+ display: flex;
+ justify-content:center;
+ gap:30px;
+}
+.three-phrases p{
+    margin-left: 30px;
+}
+.products .n1{
+    font-size: 35px;
+    line-height: 46px;
+    color: #151875;
+    font-family: 'Josefin Sans'; 
+    margin-top: 70px;
+}
+.products .n2{
+    font-size: 21px;
+    line-height:27.72px ;
+    color: #FB2E86;
+    font-family:'Josefin Sans' ;
+    letter-spacing: 1.5%;
+    margin-top: -22px;
+}
+.products .n3{
+    font-size: 17px;
+    line-height:30px ;
+    color: #B7BACB;
+    font-family: 'Lato', sans-serif ;
+    letter-spacing: 2%;
+}
+.products-properties{
+    display: flex;
+    justify-content: flex-start;
+    gap: 48px;
+}
+.products-properties span{
+   color: #B8B8DC;
+   width: 199px;
+   height: 30px;
+   font-family: 'Lato';
+}
+.left-d{
+   margin-top: 10px;
+}
+.right-d{
+   margin-top: 10px;
+}
+.Products-sofa{
+display: flex;
+justify-content: space-around;
+}
+.sofa{
+    width: 699px;
+    height: 597px;
+    margin: auto;
+}
+.sofa .tortuga{
+    width: 648px;
+    height: 608px;
+    margin-left: -82px;
+    margin-top: -97px;
+}
+.sofa-circle{
+    width:  471px;
+    height: 471px;
+    background-color: #FCECF1;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 54px;
+}
+.shopname{
+    width: 200px;
+    height: 57px;
+    border-radius: 2px;
+    background-color: #FB2E86;
+    color: #FFFFFF;
+    font-size: 'Josefin Sans';
+    font-size: 17px;
+    line-height: 19.92px;
+    margin-top: 37px;
+    border-color: #FB2E86;
+}

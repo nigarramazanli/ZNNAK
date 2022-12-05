@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+h1{
+   margin-top: 79px;
+}
+.top-categories_container{
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-categories{
+    max-width: 1193px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 39px;
+    
+}
+.circle{
+    width: 269px;
+    height: 269px;
+    border-radius: 50%;
+    background-color: #F6F7FB;
+    margin-top: 19px;
+}
+.item1 img{
+    margin-left: 39px;
+    margin-top: 39px;
+}
+.mini1{
+    text-align: center;
+    margin-top: 36px;
+    color: #151875;
+    font-family: Josefin Sans;
+}
+.prices1{
+    text-align: center;
+    color: #151875;
+    font-family: Josefin Sans;
+}
+.viewshop{
+    width: 94px;
+    height: 29px;
+    border-radius: 2px;
+    background-color: #08D15F;
+    color: #FFFFFF;
+    font-family: 'Josefin Sans';
+    font-size: 12px;
+    border-color:#08D15F ;
+    margin-left: 86px;
+}
+.item2 img{
+    margin-left: 56px;
+    margin-top: 56px;
+}
+.item3 img{
+    margin-left: 63px;
+    margin-top: 63px;
+}
+.item4 img{
+    margin-left: 31px;
+    margin-top: 31px;
+}
+.circle .mini{
+    text-align: center;
+    margin-top: 68px;
+    color: #151875;
+    font-family: Josefin Sans;
+
+}
+.circle .prices{
+    text-align: center;
+    color: #151875;
+    font-family: Josefin Sans;
+}
+.three-button div{
+    width: 10px;
+    height: 9.89px;
+    border-radius: 50%;
+    border-color: #FB2E86;
+    border-width: 1px;
+    background-color: #FB2E86;
+}
+.three-button{
+    display: flex;
+    gap: 11.93px;
+    margin-top: 120px;
+    justify-content: center;
+}
