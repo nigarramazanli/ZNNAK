@@ -19,21 +19,21 @@ export const DiscountItem =()=>{
                     <div className='products-properties'>
                         <div className='products-properties-left'>
                             <div className='left-u'>
-                            <img src='item' alt="..." />
+                            <img src={item} alt="..." />
                          <span>Material expose like metals</span> 
                             </div>
                          <div className='left-d'>
-                         <img src='item' alt="..."/>
+                         <img src={item} alt="..."/>
                          <span>Simple neutral colours.</span>
                          </div>
                         </div>
                         <div className='products-properties-right'>
                         <div className='right-u'>
-                            <img src='item' alt="..." />
+                            <img src={item} alt="..." />
                          <span>Clear lines and geomatric figures</span> 
                             </div>
                          <div className='right-d'>
-                         <img src='item' alt="..."/>
+                         <img src={item} alt="..."/>
                          <span>Material expose like metals</span>
                          
                          </div>
