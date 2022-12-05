@@ -1,0 +1,40 @@
+.ShopexOffer {
+  max-width: 1177px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 58px;
+}
+.ShopexOffer h1 {
+  text-align: center;
+  font-size: 42px;
+  line-height: 49px;
+  color: #1a0b5b;
+}
+.offers {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  text-align: center;
+}
+.offer {
+  width: 270px;
+  height: 320px;
+  background: #ffffff;
+  box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+  padding-top: 56px;
+}
+.offer h3 {
+  font-family: "Josefin Sans";
+  font-size: 22px;
+  line-height: 26px;
+  color: #151875;
+}
+.offer p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: rgba(26, 11, 91, 0.3);
+}
