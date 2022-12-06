@@ -1,31 +1,18 @@
-@font-face {
-    font-family: "Josefin";
-    src: url("../font/JosefinSans-VariableFont_wght.ttf");
-}
-@font-face {
-    font-family: Lato;
-    src: url("../font/Lato-Black.ttf");
-}
-$font-family:Josefin;
-$font-family2:Lato;
-$color:#151875;
-
-
+@import '../../variables';
 
 .trending-product{
-    background-color: white;
     margin-bottom: 132px;
     .header_title{
         text-align: center;
         padding-bottom: 39px;
-        font-family: $font-family;
+        font-family: $font-family1;
     }
     h1,h3,p{
-        color:$color;
+        color:$color1;
         text-align: center;
     }
     p{
-        font-family: $font-family2;
+        font-family: $font-family3;
     }
     .card-group{
         display: flex;
@@ -41,10 +28,10 @@ $color:#151875;
             gap:12px;
             s{
                 color:#1518754D;
-                font-family: $font-family;
+                font-family: $font-family1;
             }
             b{
-                font-family: $font-family;
+                font-family: $font-family1;
             }
         }
     }
@@ -54,11 +41,11 @@ $color:#151875;
         justify-content: center;
         gap:29px;
         h3{
-            font-family: $font-family;
+            font-family: $font-family1;
         }
         a{
-            color:#FB2E86;
-            font-family: $font-family2;
+            color:$color2;
+            font-family: $font-family3;
         }
         .card_1{
             padding-left: 25px;
@@ -66,8 +53,8 @@ $color:#151875;
             height: 270px;
             background-color: #FFF6FB;
             h2{
-                color:$color;
-                font-family: $font-family;
+                color:$color1;
+                font-family: $font-family1;
             }
             .card_img{
                 display: flex;
@@ -83,8 +70,8 @@ $color:#151875;
             height: 270px;
             background-color: #EEEFFB;
             h2{
-                color:$color;
-                font-family: $font-family;
+                color:$color1;
+                font-family: $font-family1;
             }
             .card_img{
                 display: flex;
@@ -98,7 +85,7 @@ $color:#151875;
             padding: 5px 25px;
         }
         s{
-            font-family: $font-family;
+            font-family: $font-family1;
         }
         .card-right{
             margin:15px 9px;
