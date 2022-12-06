@@ -1,7 +1,7 @@
 @import "../../variables";
 
 .hero{
-    background-color: #F2F0FF;
+    background-color: $bg-color1;
     display: flex;
     margin:auto ;
     height: 764px;
@@ -30,7 +30,7 @@
                     font-size: 53px;
                 }
                 .second-text{
-                    color:#8A8FB9;
+                    color:$color3;
                     font-family: $font-family3;
                     font-size: 16px;
                     line-height: 128%;
@@ -41,7 +41,7 @@
                 border-radius: 2px;
                 border-color: $color2;
                 p{
-                    color: white;
+                    color: $white;
                     font-family: $font-family1;
                     font-size: 17px;
                     padding:16px 40px;
@@ -49,7 +49,7 @@
                 }
             }
             .pink-button:hover{
-                background-color: white;
+                background-color: $white;
                 p{
                     color:$color2
                 }
@@ -89,7 +89,7 @@
                 .vector-text{
                     position: relative;
                     font-family:$font-family1 ;
-                    color: white;
+                    color: $white;
                     font-size: 35px;
                     padding-left: 35px;
                     line-height: 44px;

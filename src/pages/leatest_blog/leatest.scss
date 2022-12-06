@@ -14,7 +14,7 @@
         justify-content: center;
     .card{
         padding-bottom: 40px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        box-shadow: $box-shadow;
         border-radius: 10px;
         .card-img-top{
             border-radius: 10px;
@@ -62,7 +62,7 @@
                 font-family: $font-family2;
                 font-weight: 400;
                 line-height: 30px;
-                color: #72718F;
+                color: $color5;
             }
             .read-more{
                 font-family: $font-family2;
