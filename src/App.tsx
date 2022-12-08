@@ -1,20 +1,44 @@
-import './App.css';
+import './App.scss';
+import { AboutUs } from './pages/AboutUs/AboutUs';
+import { ContactUs } from './pages/ContactUs/ContactUs';
+import { Faq } from './pages/Faq/Faq';
 import { Footer } from './components/Footer/Footer';
+import { GridDefault } from './pages/GridDefault/GridDefault';
 import { Header } from './components/Header/Header';
-import { Hero } from './pages/hero/hero';
-import { Leatest } from './pages/leatest_blog/leatest';
-import { Trending } from './pages/trending_product/trending';
+import { HectoDemo } from './pages/HectoDemo/HectoDemo';
+import { HomePage } from './pages/HomePage/HomePage';
+import { MyAccount } from './pages/MyAccount/MyAccount';
+import { NotFound } from './pages/NotFound/NotFound';
+import { OrderCompleted } from './pages/OrderCompleted/OrderCompleted';
+import { ProductDeatils } from './pages/ProductDetails/ProductDetails';
+import { Route, Routes } from 'react-router-dom';
+import { ShoppingCart } from './pages/ShoppingCart/ShoppingCart';
+import { SignUp } from './pages/SignUp/SignUp';
 import React from 'react';
-function App() {
+
+export const App = () => {
   return (
     <div className="App">
       <Header />
-      <Hero />
-      <Trending />
-      <Leatest />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/grid-default" element={<GridDefault />} />
+          <Route path="/product-details" element={<ProductDeatils />} />
+          <Route path="/shopping-cart" element={<ShoppingCart />} />
+          <Route path="/order-completed" element={<OrderCompleted />} />
+          <Route path="/hect-odemo" element={<HectoDemo />} />
+          <Route path="/my-account" element={<MyAccount />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/not-found" element={<NotFound />} />
+          <Route path="/faq" element={<Faq />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
-import './trending.scss';
+import './TrendingProduct.scss';
 import img1 from './photo/box_for_image.png';
 import img2 from './photo/box_for_image(1).png';
 import img3 from './photo/box_for_image(2).png';
@@ -11,7 +11,7 @@ import img7 from './photo/image7.png';
 import img8 from './photo/image8.png';
 import img9 from './photo/image9.png';
 
-export const Trending = () => {
+export const TrendingProduct = () => {
   return (
     <>
       <div className="trending-product">
