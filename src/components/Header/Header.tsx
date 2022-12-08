@@ -1,4 +1,4 @@
-import './Header.css';
+import './Header.scss';
 import Hekto from './Hekto.svg';
 import heart from './Heart.svg';
 import korzina from './Korzina.svg';
@@ -17,24 +17,24 @@ export const Header = () => {
             <div className="contacts">
               <div className="contact">
                 <img className="message" src={message} alt="" />
-                <p>mhhasanul@gmail.com</p>
+                <p className='numphon'>mhhasanul@gmail.com</p>
               </div>
               <div className="contact">
                 <img className="phone" src={phone} alt="" />
-                <p>(12345)67890</p>
+                <p className='numphon'>(12345)67890</p>
               </div>
             </div>
             <div className="user-char">
               <div className="user-act">
-                <p>USD</p>
+                <p className='numphon'>USD</p>
                 <img className="vector" src={vector} alt="" />
               </div>
               <div className="user-act">
-                <p>Login</p>
+                <p className='numphon'>Login</p>
                 <img className="user" src={user} alt="" />
               </div>
               <div className="user-act">
-                <p>Wishlist</p>
+                <p className='numphon'>Wishlist</p>
                 <img className="heart" src={heart} alt="" />
               </div>
               <img className="korzina" src={korzina} alt="" />
