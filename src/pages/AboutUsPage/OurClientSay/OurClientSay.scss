@@ -1,0 +1,53 @@
+@import '../../../variables';
+.our-client-say {
+  background-color: $bg-color7;
+  height: 503px;
+  margin-top: 133px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.our-client-container {
+  max-width: 1177px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.our-client-say h1 {
+  font-family: $font-family1;
+  text-align: center;
+  font-size: 42px;
+  line-height: 26px;
+  color:$black;
+  padding-top: 71px;
+}
+.images {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
+.our-client-say h4 {
+  font-family: $font-family3;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+.our-client-say span {
+  font-family:$font-family3;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 26px;
+  color: #8a8fb9;
+}
+.our-client-say p {
+  font-family: $font-family3;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #8a8fb9;
+}
