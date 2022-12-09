@@ -17,24 +17,24 @@ export const Header = () => {
             <div className="contacts">
               <div className="contact">
                 <img className="message" src={message} alt="" />
-                <p className='numphon'>mhhasanul@gmail.com</p>
+                <p className="numphon">mhhasanul@gmail.com</p>
               </div>
               <div className="contact">
                 <img className="phone" src={phone} alt="" />
-                <p className='numphon'>(12345)67890</p>
+                <p className="numphon">(12345)67890</p>
               </div>
             </div>
             <div className="user-char">
               <div className="user-act">
-                <p className='numphon'>USD</p>
+                <p className="numphon">USD</p>
                 <img className="vector" src={vector} alt="" />
               </div>
               <div className="user-act">
-                <p className='numphon'>Login</p>
+                <p className="numphon">Login</p>
                 <img className="user" src={user} alt="" />
               </div>
               <div className="user-act">
-                <p className='numphon'>Wishlist</p>
+                <p className="numphon">Wishlist</p>
                 <img className="heart" src={heart} alt="" />
               </div>
               <img className="korzina" src={korzina} alt="" />
@@ -48,19 +48,19 @@ export const Header = () => {
               <a className="navlink" href="App.tsx">
                 Home <img className="little-vector" src={vector} alt="" />
               </a>
-              <a className="nav-link" href="App.tsx">
+              <a className="nav-link" href="./">
                 Pages
               </a>
-              <a className="nav-link" href="App.tsx">
+              <a className="nav-link" href="./">
                 Products
               </a>
-              <a className="nav-link" href="App.tsx">
-                Blogs
+              <a className="nav-link" href="./Faq">
+                Faq
               </a>
-              <a className="nav-link" href="App.tsx">
+              <a className="nav-link" href="./">
                 Shop
               </a>
-              <a className="nav-link" href="App.tsx">
+              <a className="nav-link" href="./">
                 Contact
               </a>
             </nav>
