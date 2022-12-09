@@ -15,7 +15,7 @@ export const Faq = () => {
                 <Array
                   header={'Eu dictumst cum at sed euismood condimentum?'}
                   text={
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed<br/> tristique mollis vitae, consequat gravida sagittis.'
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.'
                   }
                 />
               </div>
@@ -23,7 +23,7 @@ export const Faq = () => {
                 <Array
                   header={'Magna bibendum est fermentum eros.'}
                   text={
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed<br/> tristique mollis vitae, consequat gravida sagittis.'
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.'
                   }
                 />
               </div>
@@ -31,7 +31,7 @@ export const Faq = () => {
                 <Array
                   header={'Odio muskana hak eris conseekin sceleton?'}
                   text={
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed<br/> tristique mollis vitae, consequat gravida sagittis.'
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.'
                   }
                 />
               </div>
@@ -39,7 +39,7 @@ export const Faq = () => {
                 <Array
                   header={'Elit id blandit sabara boi velit gua mara?'}
                   text={
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed<br/> tristique mollis vitae, consequat gravida sagittis.'
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.'
                   }
                 />
               </div>
