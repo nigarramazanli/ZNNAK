@@ -1,0 +1,85 @@
+@import '../../variables';
+
+.faq-page{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1171px;
+    color: #1D3178;
+    p{
+        color:#A1ABCC;
+    }
+    .right{
+        margin-right: 106px;
+        .general-information{
+            font-family: $font-family1;
+            width: 500px;
+            .right-header{
+                padding-bottom: 64px;
+            }
+            .text-box-right{
+                .text-box{
+                    padding-bottom: 66px;
+                }
+            }
+        }
+    }
+    .left{
+        background-color:#F8F8FD;
+        width: 566px;
+        .question-box{
+            padding: 66px 75px 62px 42px;
+        }
+        .box{
+            .question-box-header{
+                padding-bottom: 84px;
+                font-family: $font-family1;
+            } 
+            .anket{
+                input{
+                    width: 445px;
+                    height: 50px;
+                    border-radius: 5px;
+                    border-color: #CDCEDC;
+                }
+                ::placeholder{
+                    color: #8990B1;
+                    font-family:$font-family2;
+                } 
+                .name{
+                    padding-bottom: 35px;
+                }
+                .subject{
+                    padding-bottom: 45px;
+                }
+                .message{
+                    padding-bottom: 41px;      
+                    textarea{
+                        padding-top: 11px;
+                        width: 445px;
+                        height: 197px;
+                        border-radius: 5px;
+                        border-color: #CDCEDC;
+                    }
+                }
+            }  
+            .send{
+                height: 48px;
+                width: 156px;
+                background-color: #FB2E86;
+                border-radius: 5px;
+                border-color: #FB2E86;
+                p{
+                    font-family: $font-family1;
+                    color: white;
+                }
+            }      
+            .send:hover{
+                background-color: white;
+                p{
+                    color:#FB2E86
+                }
+            }
+        }
+    }
+}
