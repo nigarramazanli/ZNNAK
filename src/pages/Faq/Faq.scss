@@ -7,9 +7,9 @@
     margin-left: auto;
     margin-right: auto;
     width: 1171px;
-    color: #1D3178;
+    color: $color14;
     p{
-        color:#A1ABCC;
+        color:$color15;
     }
     .right{
         margin-right: 106px;
@@ -27,7 +27,7 @@
         }
     }
     .left{
-        background-color:#F8F8FD;
+        background-color:$color16;
         .question-box{
             padding: 66px 75px 62px 42px;
         }
@@ -41,10 +41,10 @@
                     width: 445px;
                     height: 50px;
                     border-radius: 5px;
-                    border-color: #CDCEDC;
+                    border-color: $color17;
                 }
                 ::placeholder{
-                    color: #8990B1;
+                    color: $color18;
                     font-family:$font-family2;
                 } 
                 .name{
@@ -60,25 +60,25 @@
                         width: 445px;
                         height: 197px;
                         border-radius: 5px;
-                        border-color: #CDCEDC;
+                        border-color: $color17;
                     }
                 }
             }  
             .send{
                 height: 48px;
                 width: 156px;
-                background-color: #FB2E86;
+                background-color: $color2;
                 border-radius: 5px;
-                border-color: #FB2E86;
+                border-color: $color2;
                 p{
                     font-family: $font-family1;
-                    color: white;
+                    color:$white;
                 }
             }      
             .send:hover{
-                background-color: white;
+                background-color:$white;
                 p{
-                    color:#FB2E86
+                    color:$color2
                 }
             }
         }
