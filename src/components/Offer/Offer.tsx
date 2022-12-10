@@ -1,11 +1,11 @@
 import './Offer.scss';
 
-interface IOfferProps {
+interface IOfferItemProps {
   imagesrc: string;
   title: string;
   p: string;
 }
-export const Offer = (props: IOfferProps) => {
+export const Offer = (props: IOfferItemProps) => {
   const { imagesrc, title, p } = props;
   return (
     <div className="offer">
