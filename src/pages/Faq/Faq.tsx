@@ -1,7 +1,29 @@
 import './Faq.scss';
-import { FaqPageSlice } from './components/FaqPageSlice';
+import { FaqItem } from './components/FaqItem';
 
 export const Faq = () => {
+  const faqs = [
+    {
+      id: 1,
+      header: 'Eu dictumst cum at sed euismood condimentum?',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.',
+    },
+    {
+      id: 2,
+      header: 'Magna bibendum est fermentum eros.',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.',
+    },
+    {
+      id: 3,
+      header: 'Odio muskana hak eris conseekin sceleton?',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.',
+    },
+    {
+      id: 4,
+      header: 'Elit id blandit sabara boi velit gua mara?',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.',
+    },
+  ];
   return (
     <>
       <div className="faq-page">
@@ -11,38 +33,9 @@ export const Faq = () => {
               <h1>Generel Information</h1>
             </div>
             <div className="text-box-right">
-              <div className="text-box">
-                <FaqPageSlice
-                  header={'Eu dictumst cum at sed euismood condimentum?'}
-                  text={
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.'
-                  }
-                />
-              </div>
-              <div className="text-box">
-                <FaqPageSlice
-                  header={'Magna bibendum est fermentum eros.'}
-                  text={
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.'
-                  }
-                />
-              </div>
-              <div className="text-box">
-                <FaqPageSlice
-                  header={'Odio muskana hak eris conseekin sceleton?'}
-                  text={
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.'
-                  }
-                />
-              </div>
-              <div className="text-box">
-                <FaqPageSlice
-                  header={'Elit id blandit sabara boi velit gua mara?'}
-                  text={
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.'
-                  }
-                />
-              </div>
+              {faqs.map((faq) => (
+                <FaqItem header={faq.header} text={faq.text} />
+              ))}
             </div>
           </div>
         </div>

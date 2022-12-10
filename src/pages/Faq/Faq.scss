@@ -7,9 +7,9 @@
     margin-left: auto;
     margin-right: auto;
     width: 1171px;
-    color: $color14;
+    color: $color16;
     p{
-        color:$color15;
+        color:$color17;
     }
     .right{
         margin-right: 106px;
@@ -19,15 +19,10 @@
             .right-header{
                 padding-bottom: 64px;
             }
-            .text-box-right{
-                .text-box{
-                    padding-bottom: 66px;
-                }
-            }
         }
     }
     .left{
-        background-color:$color16;
+        background-color:$color18;
         .question-box{
             padding: 66px 75px 62px 42px;
         }
@@ -41,10 +36,10 @@
                     width: 445px;
                     height: 50px;
                     border-radius: 5px;
-                    border-color: $color17;
+                    border-color: $color19;
                 }
                 ::placeholder{
-                    color: $color18;
+                    color: $color20;
                     font-family:$font-family2;
                 } 
                 .name{
@@ -60,7 +55,7 @@
                         width: 445px;
                         height: 197px;
                         border-radius: 5px;
-                        border-color: $color17;
+                        border-color: $color19;
                     }
                 }
             }  
