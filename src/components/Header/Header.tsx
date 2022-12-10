@@ -45,22 +45,22 @@ export const Header = () => {
           <div className="navbar">
             <img className="hekto" src={Hekto} alt="" />
             <nav>
-              <a className="navlink" href="App.tsx">
+              <a className="navlink" href="/contact-us">
                 Home <img className="little-vector" src={vector} alt="" />
               </a>
-              <a className="nav-link" href="App.tsx">
+              <a className="nav-link" href="/">
                 Pages
               </a>
-              <a className="nav-link" href="App.tsx">
+              <a className="nav-link" href="/product-details">
                 Products
               </a>
-              <a className="nav-link" href="App.tsx">
+              <a className="nav-link" href="/">
                 Blogs
               </a>
-              <a className="nav-link" href="App.tsx">
+              <a className="nav-link" href="/shopping-cart">
                 Shop
               </a>
-              <a className="nav-link" href="App.tsx">
+              <a className="nav-link" href="/contact-us">
                 Contact
               </a>
             </nav>
