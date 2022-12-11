@@ -1,0 +1,81 @@
+@import '../../variables';
+
+.faq-page{
+    margin-top: 134px;
+    margin-bottom: 90px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1171px;
+    color: $color16;
+    p{
+        color:$color17;
+    }
+    .right{
+        margin-right: 106px;
+        .general-information{
+            font-family: $font-family1;
+            width: 500px;
+            .right-header{
+                padding-bottom: 64px;
+            }
+        }
+    }
+    .left{
+        background-color:$color18;
+        .question-box{
+            padding: 66px 75px 62px 42px;
+        }
+        .box{
+            .question-box-header{
+                padding-bottom: 84px;
+                font-family: $font-family1;
+            } 
+            .anket{
+                input{
+                    width: 445px;
+                    height: 50px;
+                    border-radius: 5px;
+                    border-color: $color19;
+                }
+                ::placeholder{
+                    color: $color20;
+                    font-family:$font-family2;
+                } 
+                .name{
+                    padding-bottom: 35px;
+                }
+                .subject{
+                    padding-bottom: 45px;
+                }
+                .messages{
+                    padding-bottom: 41px;      
+                    textarea{
+                        padding-top: 11px;
+                        width: 445px;
+                        height: 197px;
+                        border-radius: 5px;
+                        border-color: $color19;
+                    }
+                }
+            }  
+            .send{
+                height: 48px;
+                width: 156px;
+                background-color: $color2;
+                border-radius: 5px;
+                border-color: $color2;
+                p{
+                    font-family: $font-family1;
+                    color:$white;
+                }
+            }      
+            .send:hover{
+                background-color:$white;
+                p{
+                    color:$color2
+                }
+            }
+        }
+    }
+}

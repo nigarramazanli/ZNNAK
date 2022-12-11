@@ -31,9 +31,11 @@ export const Hero = () => {
                 in phasellus non in justo.
               </p>
             </div>
-            <button className="pink-button">
-              <p>Shop Now</p>
-            </button>
+            <a href="./grid-default">
+              <button className="pink-button">
+                <p>Shop Now</p>
+              </button>
+            </a>
           </div>
         </div>
         <div className="right">
