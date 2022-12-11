@@ -36,22 +36,19 @@
                     line-height: 128%;
                 }
             }
-            .pink-button{
-                background-color: $color2;
-                border-radius: 2px;
-                border-color: $color2;
-                p{
+            .button{
+                font-family: $font-family1;
+                .shop{
+                    padding: 16px 41px;
+                    background-color:$color2;
                     color: $white;
-                    font-family: $font-family1;
-                    font-size: 17px;
-                    padding:16px 40px;
-                    margin: 0;
+                    border-radius: 3px;
+                    text-decoration: none;
                 }
-            }
-            .pink-button:hover{
-                background-color: $white;
-                p{
-                    color:$color2
+                .shop:hover{
+                    background-color: $white;
+                    color:$color2;
+                    border:1px solid $color2;
                 }
             }
         }

@@ -1,0 +1,90 @@
+@import "../../variables";
+
+.griddefault{
+    margin-top:124px;
+    width: 1171px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color1;
+    .grid-default-navbar{
+        display: flex;
+        margin-bottom: 144px;
+        .left{
+            margin-right: auto;
+            .header{
+                h2{
+                    font-family: $font-family1;
+                    margin:0;  
+                } 
+            }
+            .text{
+                sub{
+                    font-family: $font-family3;
+                    color: $color3;
+                }
+            }
+        }
+        .right{
+            margin-top:10px;
+            margin-left: auto;
+            display: flex;
+            gap:27px;
+            font-family: $font-family2;
+            .per-page{
+                display: flex;
+                width: 140px;
+                height: 28px;
+                p{
+                    margin-top:auto ;
+                    margin-bottom: auto;
+                }
+                input{
+                    margin-left:8px;
+                    width: 55px;
+                    height: 25px;
+                    border: 1px solid $color11;
+                }
+            }
+            .sort{
+                display: flex;
+                width: 185px;
+                height: 28px;
+                select{
+                    font-family: $font-family2;
+                    margin-left:8px;
+                    width: 120px;
+                    height: 28px;
+                    border: 1px solid $color11;
+                    color: $color3;
+                    padding:5px 11px;
+                }
+                label{
+                    margin-top:auto ;
+                    margin-bottom: auto;
+                }
+            }
+            .view{
+                display: flex;
+                width: 90px;
+                height: 28px;
+                p{
+                    margin-top:auto ;
+                    margin-bottom: auto;
+                    margin-right: 5px;
+                }
+                .icon{
+                    margin-top:auto ;
+                    margin-bottom: auto;
+                    img{
+                        margin-right: 6px;
+                    }
+                }
+            }
+        }
+    }
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        width: 1310px;
+    }
+}
