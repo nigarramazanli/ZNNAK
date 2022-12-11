@@ -1,0 +1,25 @@
+@import '../../variables';
+
+.offer {
+    width: 270px;
+    height: 320px;
+    background: $white;
+    box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+    padding-top: 56px;
+  }
+  .offer h3 {
+    font-family: $font-family1;
+    font-size: 22px;
+    line-height: 26px;
+    color: $color1;
+  }
+  .offer p {
+    font-family: $font-family3;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: $color21;
+  }
+  
