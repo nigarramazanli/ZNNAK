@@ -1,0 +1,34 @@
+@import "../../../../variables";
+
+.subscribe-container{
+    max-width: 1920px;
+    height: 462px;
+}
+.image-subscribe{
+    max-width: 1920px;
+    z-index: -1;
+    padding-top: 125px;
+    margin-top: 20px;
+}
+.text-button{
+    text-align: center;
+    margin-top: -310px;
+}
+.text-button p{
+    font-family: $font-family1;
+    letter-spacing: 1.5%;
+    font-size: 35px;
+    color: $color1;
+    line-height: 54.25px;
+}
+.text-button button{
+    background-color:$color2 ;
+    width: 173px;
+    height: 49px;
+    border-radius: 2px;
+    color: $white;
+    font-size: 17px;
+    font-family: $font-family1;
+    letter-spacing: 2%;
+}
+
