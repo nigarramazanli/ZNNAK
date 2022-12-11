@@ -14,28 +14,28 @@ export const OurFeatures = () => {
           <Offer
             imagesrc={delivery}
             title={'Free Delivery'}
-            p={'Why pay for shipping! You’re invited! Get Free Shipping. No minimums.  No coupon required.'}
+            info={'Why pay for shipping! You’re invited! Get Free Shipping. No minimums.  No coupon required.'}
           />
         </div>
         <div className="yellow">
           <Offer
             imagesrc={cashback}
             title={'100% Cash Back'}
-            p={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Massa purus gravida.'}
+            info={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Massa purus gravida.'}
           />
         </div>
         <div className="yellow">
           <Offer
             imagesrc={quality}
             title={'Quality Product'}
-            p={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Massa purus gravida.'}
+            info={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Massa purus gravida.'}
           />
         </div>
         <div className="yellow">
           <Offer
             imagesrc={support}
             title={'24/7 Support'}
-            p={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Massa purus gravida.'}
+            info={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Massa purus gravida.'}
           />
         </div>
       </div>
