@@ -78,7 +78,7 @@ export const TrendingProduct = () => {
           <div className="card_1">
             <div className="card-body">
               <h2 className="card-title">23% off in all products</h2>
-              <a href="#">
+              <a href="./grid-default">
                 <u>Shop Now</u>
               </a>
             </div>
