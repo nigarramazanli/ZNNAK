@@ -1,5 +1,6 @@
 import './GridDefault.scss';
 import { GridDefaultItem } from './GridDefaultItem';
+import { Logos } from '../HomePage/components/Logos/Logos';
 import airpods from './components/photo/purepng1.png';
 import bag from './components/photo/100111.png';
 import camera from './components/photo/cam2.png';
@@ -147,6 +148,7 @@ export const GridDefault = () => {
             />
           ))}
         </div>
+        <Logos />
       </div>
     </>
   );

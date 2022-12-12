@@ -1,6 +1,7 @@
 import './Faq.scss';
 import { FaqItem } from './components/FaqItem';
 import { Link } from 'react-router-dom';
+import { Logos } from '../HomePage/components/Logos/Logos';
 
 export const Faq = () => {
   const faqs = [
@@ -66,6 +67,7 @@ export const Faq = () => {
           </div>
         </div>
       </div>
+      <Logos />
     </>
   );
 };
