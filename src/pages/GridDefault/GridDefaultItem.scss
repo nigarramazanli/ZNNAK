@@ -1,0 +1,67 @@
+@import "../../variables";
+
+.boxes{
+    width: 273px;
+    height: 363px;
+    margin-bottom: 81px;
+    margin-right:53px;
+    .chair-box{
+        width: 270px;
+        height: 280px;
+        margin-bottom: 18px;
+        background-color: $bg-color8;
+        img{
+            padding: 45px;
+        }
+    }
+    .about{
+        text-align: center;
+        .about-title{
+            font-family: $font-family1;
+            color: $color1;
+            margin-bottom: 8px;
+        }
+        .color-button{
+            justify-content: center;
+            display: flex;
+            margin-bottom: 15px;
+            gap:6px;
+            .button-orange{
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                border:none;
+                background-color: $bg-color18;
+            }
+            .button-pink{
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                border:none;
+                background-color: $bg-color19;
+            }
+            .button-blue{
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                border:none;
+                background-color: $bg-color20;
+            }
+        }
+        .price{
+            justify-content: center;
+            display: flex;
+            gap:10px;
+            
+            p{
+                font-family: $font-family5;
+                color:$color1;
+                margin: 0;
+            }
+            del{
+                font-family: $font-family1;
+                color:$color2;
+            }
+        }
+    }
+}

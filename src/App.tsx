@@ -13,8 +13,8 @@ import { OrderCompleted } from './pages/OrderCompleted/OrderCompleted';
 import { ProductDeatils } from './pages/ProductDetails/ProductDetails';
 import { Route, Routes } from 'react-router-dom';
 import { ShoppingCart } from './pages/ShoppingCart/ShoppingCart';
-import React from 'react';
 import { SignUpPage } from './pages/SignUpPage/SignUpPage';
+import React from 'react';
 
 export const App = () => {
   return (
