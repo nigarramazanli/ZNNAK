@@ -1,0 +1,94 @@
+@import '..//..//variables';
+
+
+.ordered{
+    height: 893px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ordered-small{
+    width: 1176px;
+    height: 893px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ordered-small-one{
+height: 647px;
+}
+.ordered-small-two{
+    height: 246px;
+}
+.ordered-small-top{
+    height: 560px;
+    display: flex;
+    align-items: flex-end;
+}
+.ordered-top{
+    height: 382px;
+    width: 1176px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main-content{
+    height: 326px;
+    width: 625px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clock
+{
+    width: 94px;
+    height: 94px;
+}
+.check{
+    width: 70px;
+    height: 70px;
+    align-self: flex-end;
+}
+
+.ttrue{
+    width: 87.02px;
+height: 80.44px;
+margin-bottom: 22.56px;
+}
+
+.yourOrder{
+font-family: $font-family5;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+color: $color16;
+margin-top: 0;
+margin-bottom: 28px;
+}
+.yourInfo{
+font-family: $font-family3;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 30px;
+text-align: center;
+color: $color17;
+margin: 0;
+margin-bottom: 34px;
+}
+
+.orderBtn{    
+background: $bg-color11;
+border-radius: 3px;
+font-family: $font-family3;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 30px;
+text-align: center;
+color: $bg-color6;
+width: 208px;
+height: 59px;
+border: none;
+}

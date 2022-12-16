@@ -1,0 +1,314 @@
+@import '..//..//variables.scss' ;
+
+
+.ShoppingCarts
+{
+    height: 800px;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 145px;
+    margin-top: 131px;
+}
+
+.ShoppingCartsFirst{
+    width: 721px;
+    height: 800px;
+}
+
+.ShoppingCartsSecond{
+    height: 850px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ShoppingCartsText{
+    display: flex;
+    justify-content: space-between;
+
+    p{
+        font-family: $font-family5;
+        font-size: 20px;
+        line-height: 23px;
+        color: $color16;
+        margin-top: 0;
+        margin-bottom: 48px;
+    }
+}
+
+.ShoppingCartsButtons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-cart{
+    font-family: $font-family5;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+    background: $color2;
+    border-radius: 2px;
+    width: 134px;
+    height: 39px;
+    border: none;
+    text-align: center;
+}
+
+.ShoppingCartsItems{
+    display: flex;
+    flex-direction: column;
+}
+
+.ShoppingCartItem{
+    height: 123px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.ShoppingCartItemMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ShoppingCartButton{
+    display: flex;
+    justify-content: center;
+    background: $bg-color1;
+    width: 51px;
+height: 15px;
+margin-right: 140px;
+}
+
+.ShoppingCartProduct{
+    border-radius: 3px;
+}
+.btnx{
+    position: relative;
+    bottom: 80px;
+    right: 7px;
+}
+
+.ProductName{
+    font-family: $font-family5;
+font-size: 14px;
+line-height: 16px;
+color: $color6;
+margin: 0;
+margin-bottom: 6px;
+}
+.ProductColor , .ProductSize
+{
+    font-family: $font-family5;
+font-size: 12px;
+line-height: 14px;
+color: $bg-color18;
+margin: 0;
+margin-bottom: 7px;
+}
+
+.ShoppingCartPrice , .totalPrice{
+    font-family: $font-family5;
+font-size: 14px;
+line-height: 16px;
+color: $color1;
+}
+
+.minusBtn , .plusBtn{
+    background: $bg-color19;
+    width: 12px;
+height: 15px;
+text-align: center;
+border: none;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $bg-color20;
+}
+.numberOfItems{
+    width: 27px;
+    margin: 0;
+    font-family: $font-family5;
+font-size: 12px;
+line-height: 14px;
+color: $bg-color20;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.ShoppingCartPhoto{
+    margin-right: 15px;
+}
+
+.ShoppingCartInfo{
+    width: 206px;
+}
+.ShoppingCartPrice{
+    margin-right: 122px;
+}
+.belowLine{
+    border: 0px solid $bg-color24;
+    width: 740px;
+    margin-top: 11px;
+}
+
+
+
+.ShoppingCartsSecondUp , .ShoppingCartsSecondDown
+{
+    height: 340px;
+    width: 371px;
+    background: $bg-color25;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ShoppingCartsH1 , .ShoppingCartsH2{
+    margin: 0;
+    text-align: center;
+    font-family: $font-family5;
+font-size: 20px;
+line-height: 23px;
+
+color: $color16;
+;
+}
+.ShoppingCartsH1{
+    margin-bottom: 30px
+}
+.ShoppingCartsH2{
+    margin-top: 26px;
+    margin-bottom: 20px;
+}
+
+
+.ShoppingCartsTextTwo{
+    margin-left: 140px;
+}
+.ShoppingCartsSecondUpIn
+{
+    width: 318px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.ShoppingCartsSecondUpInPar
+{
+    display: flex;
+    justify-content: space-between;
+    width: 318px;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 9px;
+
+    p{
+        font-family: $font-family3;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+color: $color16;
+    }
+}
+
+.icon-and-text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 318px;
+    margin-top: 22px;
+    margin-bottom: 25px;
+    p{
+font-family: $font-family3;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: $bg-color21;
+    }
+}
+
+.icon1{
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+}
+
+.btn-green{
+    width: 312px;
+height: 40px;
+background: $bg-color22;
+border-radius: 3px;
+font-family: $font-family3;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+color: $white;
+border: none;
+}
+
+.line-above{
+    width: 310px;
+    height: 1px;
+
+}
+
+
+.line-small{
+    width: 307px;
+    height: 1px;
+}
+
+.btn-pink{
+    width: 179px;
+height: 41px;
+border: none;
+background: $color2;
+border-radius: 2px;
+font-family: $font-family5;
+font-size: 16px;
+line-height: 19px;
+color: $white;
+margin-top: 45px;
+}
+
+
+.ShoppingCartsSecondDown{
+        p{
+            font-family: $font-family5;
+    font-size: 14px;
+    line-height: 16px;
+    color: $bg-color23;
+    
+        }
+}
+
+.Bangladesh{
+    margin-top: 47px;
+    margin-bottom: 10px;
+}
+
+.Dhaka{
+    margin-top: 42px;
+    margin-bottom: 12px;
+}
+.Postal{
+    margin-top: 42px;
+    margin-bottom: 12px;
+}
+
+.ShoppingCartsSecondDownIn{
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

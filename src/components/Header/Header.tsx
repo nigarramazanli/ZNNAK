@@ -8,6 +8,7 @@ import message from './Message.svg';
 import phone from './bx_bx-phone-call.svg';
 import user from './carbon_user.svg';
 import vector from './Vector.svg';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
