@@ -1,4 +1,5 @@
 import './Header.scss';
+import { Link } from 'react-router-dom';
 import Hekto from './Hekto.svg';
 import heart from './Heart.svg';
 import korzina from './Korzina.svg';
@@ -45,26 +46,24 @@ export const Header = () => {
         <div className="big-navbar">
           <div className="navbar">
             <img className="hekto" src={Hekto} alt="" />
-            <nav>
-              <Link to='' className="navlink" >
-                Home <img className="little-vector" src={vector} alt="" />
-              </Link>
-              <Link to="" className="nav-link">
-                Pages
-              </Link>
-              <Link to="" className="nav-link">
-                Product
-              </Link>
-              <Link to="./faq" className="nav-link">
-                Faq
-              </Link>
-              <Link to="" className="nav-link">
-                Shop
-              </Link>
-              <Link to="" className="nav-link">
-                Contact
-              </Link>
-            </nav>
+            <a className="navlink" href="App.tsx">
+              Home <img className="little-vector" src={vector} alt="" />
+            </a>
+            <Link to="" className="nav-link">
+              Pages
+            </Link>
+            <Link to="" className="nav-link">
+              Product
+            </Link>
+            <Link to="./faq" className="nav-link">
+              Faq
+            </Link>
+            <Link to="" className="nav-link">
+              Shop
+            </Link>
+            <Link to="" className="nav-link">
+              Contact
+            </Link>
             <form className="search-button">
               <input className="search" type="text" name="search" />
               <button className="lupa-button" type="submit">

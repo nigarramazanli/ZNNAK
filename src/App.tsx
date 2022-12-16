@@ -1,5 +1,5 @@
 import './App.scss';
-import { AboutUs } from './pages/AboutUs/AboutUs';
+import { AboutUs } from './pages/AboutUsPage/AboutUs';
 import { ContactUs } from './pages/ContactUs/ContactUs';
 import { Faq } from './pages/Faq/Faq';
 import { Footer } from './components/Footer/Footer';
@@ -13,7 +13,7 @@ import { OrderCompleted } from './pages/OrderCompleted/OrderCompleted';
 import { ProductDeatils } from './pages/ProductDetails/ProductDetails';
 import { Route, Routes } from 'react-router-dom';
 import { ShoppingCarts } from './pages/ShoppingCarts/ShoppingCarts';
-import { SignUp } from './pages/SignUp/SignUp';
+import { SignUpPage } from './pages/SignUpPage/SignUpPage';
 import React from 'react';
 
 export const App = () => {
@@ -29,7 +29,7 @@ export const App = () => {
           <Route path="/order-completed" element={<OrderCompleted />} />
           <Route path="/hect-odemo" element={<HectoDemo />} />
           <Route path="/my-account" element={<MyAccount />} />
-          <Route path="/signup" element={<SignUp />} />
+          <Route path="/signup" element={<SignUpPage />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/not-found" element={<NotFound />} />
