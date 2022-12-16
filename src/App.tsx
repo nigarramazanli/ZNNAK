@@ -12,7 +12,7 @@ import { NotFound } from './pages/NotFound/NotFound';
 import { OrderCompleted } from './pages/OrderCompleted/OrderCompleted';
 import { ProductDeatils } from './pages/ProductDetails/ProductDetails';
 import { Route, Routes } from 'react-router-dom';
-import { ShoppingCart } from './pages/ShoppingCart/ShoppingCart';
+import { ShoppingCarts } from './pages/ShoppingCarts/ShoppingCarts';
 import { SignUp } from './pages/SignUp/SignUp';
 import React from 'react';
 
@@ -25,7 +25,7 @@ export const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/grid-default" element={<GridDefault />} />
           <Route path="/product-details" element={<ProductDeatils />} />
-          <Route path="/shopping-cart" element={<ShoppingCart />} />
+          <Route path="/shopping-carts" element={<ShoppingCarts />} />
           <Route path="/order-completed" element={<OrderCompleted />} />
           <Route path="/hect-odemo" element={<HectoDemo />} />
           <Route path="/my-account" element={<MyAccount />} />

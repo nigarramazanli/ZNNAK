@@ -66,20 +66,18 @@ export const ContactUs = () => {
               <div className="box">
                 <div className="anket">
                   <div className="name">
-                    <input className='naming' typeof="text" placeholder="Your Name*"></input>
-                    <input className='emailing' typeof="email" placeholder="Your E-mail*"></input>
-                  </div>
-                  <div >
-                    <input className='subject' typeof="text" placeholder="Subject*"></input>
+                    <input className="naming" typeof="text" placeholder="Your Name*"></input>
+                    <input className="emailing" typeof="email" placeholder="Your E-mail*"></input>
                   </div>
                   <div>
-                    <input className='message-one' type=" text" placeholder='Type Your Message*' />
+                    <input className="subject" typeof="text" placeholder="Subject*"></input>
+                  </div>
+                  <div>
+                    <input className="message-one" type=" text" placeholder="Type Your Message*" />
                   </div>
                 </div>
                 <div className="button">
-                  <button className="send">
-                    <p>Send Mail</p>
-                  </button>
+                  <button className="send">Send Mail</button>
                 </div>
               </div>
             </div>

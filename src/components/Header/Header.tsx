@@ -7,6 +7,7 @@ import message from './Message.svg';
 import phone from './bx_bx-phone-call.svg';
 import user from './carbon_user.svg';
 import vector from './Vector.svg';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
@@ -17,24 +18,24 @@ export const Header = () => {
             <div className="contacts">
               <div className="contact">
                 <img className="message" src={message} alt="" />
-                <p className='numphon'>mhhasanul@gmail.com</p>
+                <p className="numphon">mhhasanul@gmail.com</p>
               </div>
               <div className="contact">
                 <img className="phone" src={phone} alt="" />
-                <p className='numphon'>(12345)67890</p>
+                <p className="numphon">(12345)67890</p>
               </div>
             </div>
             <div className="user-char">
               <div className="user-act">
-                <p className='numphon'>USD</p>
+                <p className="numphon">USD</p>
                 <img className="vector" src={vector} alt="" />
               </div>
               <div className="user-act">
-                <p className='numphon'>Login</p>
+                <p className="numphon">Login</p>
                 <img className="user" src={user} alt="" />
               </div>
               <div className="user-act">
-                <p className='numphon'>Wishlist</p>
+                <p className="numphon">Wishlist</p>
                 <img className="heart" src={heart} alt="" />
               </div>
               <img className="korzina" src={korzina} alt="" />
@@ -45,24 +46,24 @@ export const Header = () => {
           <div className="navbar">
             <img className="hekto" src={Hekto} alt="" />
             <nav>
-              <a className="navlink" href="/contact-us">
+              <Link to='' className="navlink" >
                 Home <img className="little-vector" src={vector} alt="" />
-              </a>
-              <a className="nav-link" href="/">
+              </Link>
+              <Link to="" className="nav-link">
                 Pages
-              </a>
-              <a className="nav-link" href="/product-details">
-                Products
-              </a>
-              <a className="nav-link" href="/">
-                Blogs
-              </a>
-              <a className="nav-link" href="/shopping-cart">
+              </Link>
+              <Link to="" className="nav-link">
+                Product
+              </Link>
+              <Link to="./faq" className="nav-link">
+                Faq
+              </Link>
+              <Link to="" className="nav-link">
                 Shop
-              </a>
-              <a className="nav-link" href="/contact-us">
+              </Link>
+              <Link to="" className="nav-link">
                 Contact
-              </a>
+              </Link>
             </nav>
             <form className="search-button">
               <input className="search" type="text" name="search" />
