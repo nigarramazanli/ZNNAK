@@ -36,7 +36,7 @@ export const FeaturedProducts = () => {
       title: 'Cantilever chair',
       code: 'Code - Y523201',
       price: 49,
-    }
+    },
   ];
   return (
     <div className="featured-products">
@@ -44,6 +44,7 @@ export const FeaturedProducts = () => {
       <div className="chairs">
         {products.map((product, index) => (
           <FeaturedProduct
+            key={product.id}
             imgSrc={product.imgSrc}
             title={product.title}
             code={product.code}
