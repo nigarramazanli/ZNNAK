@@ -7,11 +7,17 @@ import { Subscribe } from './components/Subscribe/Subscribe';
 import { TopCategories } from './components/TopCategories/TopCategories';
 import { TrendingProduct } from './components/TrendingProduct/TrendingProduct';
 import { Unique } from './components/Unique/Unique';
+import { FeaturedProducts } from './components/FeaturedProducts/FeaturedProducts';
+import { LatestProducts } from './components/LatestProducts/LatestProducts';
+import { ShopexOffer } from './components/ShopexOffer/ShopexOffer';
 
 export const HomePage = () => {
   return (
     <>
       <Hero />
+      <FeaturedProducts/>
+      <LatestProducts/>
+      <ShopexOffer/>
       <Unique />
       <TrendingProduct />
       <DiscountItem />
