@@ -32,7 +32,7 @@ export const Hero = () => {
                 in phasellus non in justo.
               </p>
             </div>
-            <div className="button">
+            <div className="button-hero">
               <Link to="./grid-default" className="shop">
                 Shop Now
               </Link>

@@ -48,18 +48,18 @@ export const Faq = () => {
                 <h3>Ask a Question</h3>
               </div>
               <div className="anket">
-                <div className="name">
+                <div className="name-faq">
                   <input typeof="text" placeholder="Your Name*"></input>
                 </div>
-                <div className="subject">
+                <div className="subject-faq">
                   <input typeof="text" placeholder="Subject*"></input>
                 </div>
                 <div className="messages">
                   <textarea placeholder="Type Your Message*"></textarea>
                 </div>
               </div>
-              <div className="button">
-                <Link to="./order-completed" className="send">
+              <div className="button-faq">
+                <Link to="./order-completed" className="send-faq">
                   Send Mail
                 </Link>
               </div>
