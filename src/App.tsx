@@ -10,11 +10,11 @@ import { HomePage } from './pages/HomePage/HomePage';
 import { MyAccount } from './pages/MyAccount/MyAccount';
 import { NotFound } from './pages/NotFound/NotFound';
 import { OrderCompleted } from './pages/OrderCompleted/OrderCompleted';
-import { ProductDeatils } from './pages/ProductDetails/ProductDetails';
 import { Route, Routes } from 'react-router-dom';
 import { ShoppingCart } from './pages/ShoppingCart/ShoppingCart';
 import React from 'react';
 import { SignUpPage } from './pages/SignUpPage/SignUpPage';
+import { ProductDetails } from './pages/ProductDetails/ProductDetails';
 
 export const App = () => {
   return (
@@ -24,7 +24,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/grid-default" element={<GridDefault />} />
-          <Route path="/product-details" element={<ProductDeatils />} />
+          <Route path="/product-details" element={<ProductDetails />} />
           <Route path="/shopping-cart" element={<ShoppingCart />} />
           <Route path="/order-completed" element={<OrderCompleted />} />
           <Route path="/hect-odemo" element={<HectoDemo />} />

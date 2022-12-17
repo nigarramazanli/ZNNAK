@@ -1,5 +1,10 @@
+import { Playwood } from './Components/Playwood/Playwood';
 import './ProductDetails.scss';
 
-export const ProductDeatils = () => {
-  return <></>;
+export const ProductDetails =()=>{
+    return(
+        <>
+        <Playwood />
+        </>
+    );
 };

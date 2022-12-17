@@ -1,0 +1,112 @@
+@import "../../../../variables";
+.playwood-container{
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.playwood{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 21px;
+}
+
+.image-first-column{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.image-first-column img{
+    width: 151px;
+    height: 155px;
+}
+.playwood-arm-chair h1{
+    font-size: 36px;
+    line-height: 42.19px;
+    font-family: $font-family5;
+    color: $color29;
+}
+.rating {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    gap: 3.08px;
+}
+.rating[data-total-value="1"].stars:nth-child(n+5),
+.rating[data-total-value="2"].stars:nth-child(n+4),
+.rating[data-total-value="3"].stars:nth-child(n+3),
+.rating[data-total-value="4"].stars:nth-child(n+2),
+.rating[data-total-value="5"].stars:nth-child(n+1){
+    color: orange;
+}
+.stars{
+    font-size: 19px;
+    color: grey;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    display: flex;
+}
+.stars:hover,
+.stars:hover ~ .stars{
+    color:orange;
+}
+.twenty-two{
+    font-size: 14px;
+    font-family: $font-family1;
+    color: $color1;
+    line-height: 29px;
+}
+.playwood-arm-chair p{
+  font-size: 16px;
+}
+.price-cat-tag{
+    font-family: $font-family4;
+    color: $color1;
+    line-height: 29px;
+}
+.price-pink{
+    font-size: 16px;
+    line-height: 29px;
+    color: $color2;
+    font-family: $font-family4;
+    margin-left: 18px;
+    line-height: 29px;
+}
+.color-blue{
+    font-size: 16px;
+    line-height: 18.75px;
+    font-family: $font-family4;
+    color: $color29;
+}
+.playwood-text{
+    color: $color28;
+    font-size: 16px;
+    font-family: $font-family4;
+    line-height: 29px;
+    width: 549px;
+}
+.add-to-card{
+    display: flex;
+    gap: 20px;
+    margin-left: 65px;
+}
+.add-to-card p{
+    color: $color1;
+    font-family: $font-family1 ;
+    font-size: 16px;
+}
+.sharing{
+    display: flex;
+    gap: 20.75px;
+    align-items: center;
+}
+.social-media-icons{
+    display: flex;
+    gap: 10px;
+}

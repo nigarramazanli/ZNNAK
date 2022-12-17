@@ -1,0 +1,35 @@
+.subscribe-container {
+  max-width: 1920px;
+  height: 462px;
+}
+
+.image-subscribe {
+  max-width: 1920px;
+  z-index: -1;
+  padding-top: 125px;
+  margin-top: 20px;
+}
+
+.text-button {
+  text-align: center;
+  margin-top: -310px;
+}
+
+.text-button p {
+  font-family: Josefin;
+  letter-spacing: 1.5%;
+  font-size: 35px;
+  color: #151875;
+  line-height: 54.25px;
+}
+
+.text-button button {
+  background-color: #FB2E86;
+  width: 173px;
+  height: 49px;
+  border-radius: 2px;
+  color: white;
+  font-size: 17px;
+  font-family: Josefin;
+  letter-spacing: 2%;
+}/*# sourceMappingURL=Subscribe.css.map */

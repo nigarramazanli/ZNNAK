@@ -1,0 +1,24 @@
+.offer {
+  width: 270px;
+  height: 320px;
+  background: white;
+  box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+  padding-top: 56px;
+}
+
+.offer h3 {
+  font-family: Josefin;
+  font-size: 22px;
+  line-height: 26px;
+  color: #151875;
+}
+
+.offer p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: rgba(26, 11, 91, 0.3);
+}/*# sourceMappingURL=Offer.css.map */

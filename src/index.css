@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Josefin";
+  src: url("../src/components/font/JosefinSans-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Lato;
+  src: url("../src/components/font/Lato-Black.ttf");
+}
+@font-face {
+  font-family: Lato-Regular;
+  src: url("../src/components/font/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../src/components/font/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: Josefin Sans;
+  src: url("../src/components/font/JosefinSans-Regular.ttf");
+}
+@font-face {
+  font-family: Josefin Sans;
+  src: url("../src/components/font/JosefinSans-Medium.ttf");
+}
+@font-face {
+  font-family: Josefin Sans;
+  src: url("../src/components/font/JosefinSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: Josefin Sans;
+  src: url("../src/components/font/JosefinSans-Bold.ttf");
+}
+@font-face {
+  font-family: Lato;
+  src: url("../src/components/font/Lato-Black.ttf");
+}
+@font-face {
+  font-family: Lato;
+  src: url("../src/components/font/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: Lato;
+  src: url("../src/components/font/Lato-Regular.ttf");
+}/*# sourceMappingURL=index.css.map */
