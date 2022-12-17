@@ -1,11 +1,11 @@
 @import "../../variables";
 
-.boxes{
+.boxes-grid{
     width: 273px;
     height: 363px;
     margin-bottom: 81px;
     margin-right:53px;
-    .chair-box{
+    .chair-box-grid{
         width: 270px;
         height: 280px;
         margin-bottom: 18px;
@@ -14,14 +14,14 @@
             padding: 45px;
         }
     }
-    .about{
+    .about-grid{
         text-align: center;
-        .about-title{
+        .about-title-grid{
             font-family: $font-family1;
             color: $color1;
             margin-bottom: 8px;
         }
-        .color-button{
+        .color-button-grid{
             justify-content: center;
             display: flex;
             margin-bottom: 15px;
@@ -31,24 +31,24 @@
                 height: 12px;
                 border-radius: 50%;
                 border:none;
-                background-color: $bg-color18;
+                background-color: $bg-color26;
             }
             .button-pink{
                 width: 12px;
                 height: 12px;
                 border-radius: 50%;
                 border:none;
-                background-color: $bg-color19;
+                background-color: $bg-color27;
             }
             .button-blue{
                 width: 12px;
                 height: 12px;
                 border-radius: 50%;
                 border:none;
-                background-color: $bg-color20;
+                background-color: $bg-color28;
             }
         }
-        .price{
+        .price-grid{
             justify-content: center;
             display: flex;
             gap:10px;
