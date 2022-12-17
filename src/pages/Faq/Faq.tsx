@@ -1,9 +1,33 @@
 import './Faq.scss';
+import * as yup from 'yup';
 import { FaqItem } from './components/FaqItem';
-import { Link } from 'react-router-dom';
 import { Logos } from '../HomePage/components/Logos/Logos';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+
+interface FaqFormData {
+  name: string;
+  subject: string;
+  message: string;
+}
+
+const schema = yup
+  .object({
+    name: yup.string().required('You must enter your name'),
+    subject: yup.string().required("You must enter your message's subject"),
+    message: yup.string().required('Please write your message'),
+  })
+  .required();
 
 export const Faq = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FaqFormData>({
+    resolver: yupResolver(schema),
+  });
+  const onSubmit: SubmitHandler<FaqFormData> = (data) => console.log(data);
   const faqs = [
     {
       id: 1,
@@ -47,22 +71,36 @@ export const Faq = () => {
               <div className="question-box-header">
                 <h3>Ask a Question</h3>
               </div>
-              <div className="anket">
-                <div className="name-faq">
-                  <input typeof="text" placeholder="Your Name*"></input>
+              <form onSubmit={handleSubmit(onSubmit)}>
+                <div className="anket">
+                  <div className={errors.name ? 'name-faq with-error' : 'name-faq'}>
+                    <input
+                      typeof="text"
+                      placeholder="Your Name*"
+                      {...register('name', { required: true })}
+                    ></input>
+                  </div>
+                  <p className="validation-error">{errors.name?.message}</p>
+                  <div className={errors.subject ? 'subject-faq with-error' : 'subject-faq'}>
+                    <input
+                      typeof="text"
+                      placeholder="Subject*"
+                      {...register('subject', { required: true })}
+                    ></input>
+                  </div>
+                  <p className="validation-error">{errors.subject?.message}</p>
+                  <div className={errors.message ? 'messages-faq with-error' : 'messages-faq'}>
+                    <textarea
+                      placeholder="Type Your Message*"
+                      {...register('message', { required: true })}
+                    ></textarea>
+                  </div>
+                  <p className="validation-error">{errors.message?.message}</p>
                 </div>
-                <div className="subject-faq">
-                  <input typeof="text" placeholder="Subject*"></input>
+                <div className="button-faq">
+                  <button className="send-faq"> Send Mail</button>
                 </div>
-                <div className="messages">
-                  <textarea placeholder="Type Your Message*"></textarea>
-                </div>
-              </div>
-              <div className="button-faq">
-                <Link to="./order-completed" className="send-faq">
-                  Send Mail
-                </Link>
-              </div>
+              </form>
             </div>
           </div>
         </div>

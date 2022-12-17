@@ -6,6 +6,7 @@
     margin-bottom: 81px;
     margin-right:53px;
     .chair-box-grid{
+        position: relative;
         width: 270px;
         height: 280px;
         margin-bottom: 18px;
@@ -63,5 +64,36 @@
                 color:$color2;
             }
         }
+    }
+}
+.boxes-grid:hover{
+    .chair-box-grid{
+        background-color: $bg-color29;
+    }  
+    .icon-grid{
+        position: absolute;
+        display: block;
+        .icon-button{
+            display: block;
+        }
+        .icon-button:hover{
+            display: block;
+            background-color: $white;
+        }
+    }
+}
+.icon-grid{
+    display: none;
+    width: 30px;
+    margin-top: -235px;
+    margin-left: 11px;
+    .icon-button{
+        display: none;
+        border-radius: 50%;
+        padding: 11px;
+    }
+    .icon-button:hover{
+        display: none;
+        background-color: $white;
     }
 }

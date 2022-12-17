@@ -32,6 +32,9 @@
                 font-family: $font-family1;
             } 
             .anket{
+                .validation-error{
+                    color:rgba(245, 81, 81, 0.904);
+                }
                 input{
                     width: 445px;
                     height: 50px;
@@ -44,25 +47,44 @@
                 } 
                 .name-faq{
                     padding-bottom: 35px;
+                    &.with-error{
+                        margin-bottom:-45px;
+                        input{
+                            border: 1px solid red;
+                        }   
+                    }
                 }
                 .subject-faq{
                     padding-bottom: 45px;
+                    &.with-error{
+                        margin-bottom:-45px;
+                        input{
+                            border: 1px solid red;
+                        }   
+                    }
                 }
-                .messages{
-                    padding-bottom: 41px;      
+                .messages-faq{
+                    padding-bottom: 41px;
+                    &.with-error{
+                        margin-bottom:-45px;
+                        textarea{
+                            border: 1px solid red;
+                        }   
+                    }
                     textarea{
                         padding-top: 11px;
                         width: 445px;
                         height: 197px;
                         border-radius: 5px;
                         border-color: $color19;
-                    }
+                    }      
                 }
             }
             .button-faq{
                 font-family: $font-family1;
                 .send-faq{
                     padding: 16px 41px;
+                    border: none;
                     background-color:$color2;
                     color: $white;
                     border-radius: 3px;
