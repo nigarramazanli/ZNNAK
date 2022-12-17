@@ -1,4 +1,7 @@
 import './GridDefaultItem.scss';
+import like from './components/photo/heart.png';
+import shop from './components/photo/shop.png';
+import zoom from './components/photo/zoom.png';
 
 interface GridDefaultItemProps {
   img: string;
@@ -30,6 +33,11 @@ export const GridDefaultItem = (props: GridDefaultItemProps) => {
             <p>${newprice}</p>
             <del>${oldprice}</del>
           </div>
+        </div>
+        <div className="icon-grid">
+          <img src={shop} alt="" className="icon-button" />
+          <img src={zoom} alt="" className="icon-button" />
+          <img src={like} alt="" className="icon-button" />
         </div>
       </div>
     </>
