@@ -89,7 +89,7 @@ export const Faq = () => {
                     ></input>
                   </div>
                   <p className="validation-error">{errors.subject?.message}</p>
-                  <div className={errors.subject ? 'messages-faq with-error' : 'messages-faq'}>
+                  <div className={errors.message ? 'messages-faq with-error' : 'messages-faq'}>
                     <textarea
                       placeholder="Type Your Message*"
                       {...register('message', { required: true })}
