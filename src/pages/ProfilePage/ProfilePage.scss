@@ -1,0 +1,91 @@
+@import '../../variables';
+
+.profile-page {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  h1 {
+    font-family: $font-family5;
+    font-size: 40px;
+    line-height: 49px;
+    color: $color26;
+  }
+  .profile-page-container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .back-color {
+    height: 250px;
+    background-color: $color12;
+    display: flex;
+    justify-content: end;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $color2;
+      border: $color2;
+      border-radius: 3px;
+      width: 208px;
+      height: 59px;
+      font-family: $font-family3;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      color: $white;
+      cursor: pointer;
+      margin-top: 30px;
+      margin-right: 100px;
+    }
+  }
+  .about-user {
+    display: flex;
+    gap: 30px;
+    margin-top: -160px;
+
+    img {
+      width: 300px;
+      height: 300px;
+    }
+    .user-data {
+      margin-top: 150px;
+      h2 {
+        font-family: $font-family5;
+        color: $color1;
+        font-size: 42px;
+        line-height: 42px;
+      }
+      p {
+        margin-top: -20px;
+        font-family: $font-family5;
+        color: $color1;
+        font-size: 22px;
+        line-height: 42px;
+      }
+    }
+  }
+}
+.contact-info {
+  margin-left: 325px;
+
+  p {
+    font-family: $font-family5;
+    font-size: 24px;
+    line-height: 30px;
+    color: $color16;
+  }
+  .random-info p {
+    color: $color3;
+  }
+  .contact {
+    display: flex;
+    gap: 150px;
+  }
+}
+.product-img {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas: 200px;
+  gap: 50px;
+}

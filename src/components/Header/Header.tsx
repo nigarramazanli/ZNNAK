@@ -1,5 +1,7 @@
 import './Header.scss';
 import { Link } from 'react-router-dom';
+import { RootState } from '../../store/store';
+import { useSelector } from 'react-redux';
 import Hekto from './Hekto.svg';
 import heart from './Heart.svg';
 import korzina from './Korzina.svg';
@@ -10,6 +12,7 @@ import user from './carbon_user.svg';
 import vector from './Vector.svg';
 
 export const Header = () => {
+  const headerState = useSelector((state: RootState) => state.header);
   return (
     <header>
       <div className="header-and-nav">
@@ -31,7 +34,15 @@ export const Header = () => {
                 <img className="vector" src={vector} alt="" />
               </div>
               <div className="user-act">
-                <p className="numphon">Login</p>
+                {headerState.currentUser ? (
+                  <div>
+                    {headerState.currentUser.name} {headerState.currentUser.lastName}
+                  </div>
+                ) : (
+                  <Link className="numphon" to="/signup">
+                    Login
+                  </Link>
+                )}
                 <img className="user" src={user} alt="" />
               </div>
               <div className="user-act">
@@ -60,7 +71,7 @@ export const Header = () => {
             <Link to="" className="nav-link">
               Shop
             </Link>
-            <Link to="" className="nav-link">
+            <Link to="./contact-us" className="nav-link">
               Contact
             </Link>
             <form className="search-button">
