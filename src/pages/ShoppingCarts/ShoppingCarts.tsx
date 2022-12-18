@@ -9,16 +9,16 @@ import product4 from './photo/product4.png';
 import product5 from './photo/product5.png';
 import icon1 from './photo/uil_check.svg' ;
 
-export const ShoppingCarts = () => {
+export const ShoppingCarts  = () => {
   const products = [
     {
       id:1,
-      ShoppingCartProduct: product1,
+      shoppingCartProduct: product1,
       btnx: btnx,
-      ProductName: 'Ut diam consequat',
-      ProductColor: 'Color:Brown',
-      ProductSize: 'Size:XL',
-      ShoppingCartPrice: 32.0,
+      productName: 'Ut diam consequat',
+      productColor: 'Color:Brown',
+      productSize: 'Size:XL',
+      shoppingCartPrice: 32.0,
       minusBtn: '-',
       numberOfItems: 1,
       plusBtn: '+',
@@ -27,12 +27,12 @@ export const ShoppingCarts = () => {
     },
     {
       id:2,
-      ShoppingCartProduct: product2,
+      shoppingCartProduct: product2,
       btnx: btnx,
-      ProductName: 'Vel faucibus posuere',
-      ProductColor: 'Color:Brown',
-      ProductSize: 'Size:XL',
-      ShoppingCartPrice: 32.0,
+      productName: 'Vel faucibus posuere',
+      productColor: 'Color:Brown',
+      productSize: 'Size:XL',
+      shoppingCartPrice: 32.0,
       minusBtn: '-',
       numberOfItems: 1,
       plusBtn: '+',
@@ -41,12 +41,12 @@ export const ShoppingCarts = () => {
     },
     {
       id:3,
-      ShoppingCartProduct: product3,
+      shoppingCartProduct: product3,
       btnx: btnx,
-      ProductName: 'Ac vitae vestibulum',
-      ProductColor: 'Color:Brown',
-      ProductSize: 'Size:XL',
-      ShoppingCartPrice: 32.0,
+      productName: 'Ac vitae vestibulum',
+      productColor: 'Color:Brown',
+      productSize: 'Size:XL',
+      shoppingCartPrice: 32.0,
       minusBtn: '-',
       numberOfItems: 1,
       plusBtn: '+',
@@ -55,12 +55,12 @@ export const ShoppingCarts = () => {
     },
     {
       id:4,
-      ShoppingCartProduct: product4,
+      shoppingCartProduct: product4,
       btnx: btnx,
-      ProductName: 'Elit massa diam',
-      ProductColor: 'Color:Brown',
-      ProductSize: 'Size:XL',
-      ShoppingCartPrice: 32.0,
+      productName: 'Elit massa diam',
+      productColor: 'Color:Brown',
+      productSize: 'Size:XL',
+      shoppingCartPrice: 32.0,
       minusBtn: '-',
       numberOfItems: 1,
       plusBtn: '+',
@@ -69,12 +69,12 @@ export const ShoppingCarts = () => {
     },
     {
       id:5,
-      ShoppingCartProduct: product5,
+      shoppingCartProduct: product5,
       btnx: btnx,
-      ProductName: 'Proin pharetra elementum',
-      ProductColor: 'Color:Brown',
-      ProductSize: 'Size:XL',
-      ShoppingCartPrice: 32.0,
+      productName: 'Proin pharetra elementum',
+      productColor: 'Color:Brown',
+      productSize: 'Size:XL',
+      shoppingCartPrice: 32.0,
       minusBtn: '-',
       numberOfItems: 1,
       plusBtn: '+',
@@ -85,23 +85,24 @@ export const ShoppingCarts = () => {
 
   return (
     <>
-      <div className="ShoppingCarts">
-        <div className="ShoppingCartsFirst">
-          <div className="ShoppingCartsText">
-            <p className="ShoppingCartsTextOne">Product</p>
-            <p className="ShoppingCartsTextTwo">Price</p>
-            <p className="ShoppingCartsTextThree">Quantity</p>
-            <p className="ShoppingCartsTextFour">Total</p>
+      <div className="shopping-carts">
+        <div className="shopping-carts-first">
+          <div className="shopping-carts-text">
+            <p className="shopping-carts-text-one">Product</p>
+            <p className="shopping-carts-text-two">Price</p>
+            <p className="shopping-carts-text-three">Quantity</p>
+            <p className="shopping-carts-text-four">Total</p>
           </div>
-          <div className="ShoppingCartsItems">
-            {products.map((product ) => (
+          <div className="shopping-carts-items">
+            {products.map((product,index ) => (
               <ShoppingCart
-                ShoppingCartProduct={product.ShoppingCartProduct}
+                key={index}
+                shoppingCartProduct={product.shoppingCartProduct}
                 btnx={product.btnx}
-                ProductName={product.ProductName}
-                ProductColor={product.ProductColor}
-                ProductSize={product.ProductSize}
-                ShoppingCartPrice={product.ShoppingCartPrice}
+                productName={product.productName}
+                productColor={product.productColor}
+                productSize={product.productSize}
+                shoppingCartPrice={product.shoppingCartPrice}
                 minusBtn={product.minusBtn}
                 numberOfItems={product.numberOfItems}
                 plusBtn={product.plusBtn}
@@ -110,21 +111,21 @@ export const ShoppingCarts = () => {
               />
             ))}
           </div>
-          <div className="ShoppingCartsButtons">
+          <div className="shopping-carts-buttons">
             <button className="btn-cart">Update Curt</button>
             <button className="btn-cart">Clear Curt</button>
           </div>
         </div>
-        <div className="ShoppingCartsSecond">
-          <h1 className='ShoppingCartsH1'>Cart Totals</h1>
-          <div className='ShoppingCartsSecondUp'>
-            <div className='ShoppingCartsSecondUpIn'>
-              <div className='ShoppingCartsSecondUpInPar'>
+        <div className="shopping-carts-second">
+          <h1 className='shopping-cartsH1'>Cart Totals</h1>
+          <div className='shopping-carts-second-up'>
+            <div className='shopping-carts-second-up-in'>
+              <div className='shopping-carts-second-up-in-par'>
                 <p>Subtotals:</p>
                 <p>£219.00</p>
               </div>
               <img className='line-above' src={line} alt="" />
-              <div className='ShoppingCartsSecondUpInPar'>
+              <div className='shopping-carts-second-up-in-par'>
                 <p>Totals:</p>
                 <p>£325.00</p>
               </div>
@@ -136,9 +137,9 @@ export const ShoppingCarts = () => {
                   <button className='btn-green'>Proceed To Checkout</button>
             </div>
           </div>
-          <h1 className='ShoppingCartsH2'>Calculate Shopping</h1>
-          <div className='ShoppingCartsSecondDown'>
-                <div className='ShoppingCartsSecondDownIn'>
+          <h1 className='shopping-cartsH2'>Calculate Shopping</h1>
+          <div className='shopping-carts-second-down'>
+                <div className='shopping-carts-second-down-in'>
             <p className='Bangladesh'>Bangladesh</p>
             <img className='line-small' src={line} alt="" />
             <p className='Dhaka'>Mirpur Dhaka - 1200</p>

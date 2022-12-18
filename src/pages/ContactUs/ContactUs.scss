@@ -192,49 +192,65 @@ margin-bottom: 46px;
 
 
 .name{
-    display: flex;
-    gap: 16px;
-    margin-bottom: 34px ;
+  display: flex;
+  gap: 23px;
+  margin-bottom: 0px;
 }
 
-.naming , .emailing{
-    width: 255px;
-    height: 45px;
-}
+
 
 .subject{
-    margin-bottom: 47px;
-    height: 45px;
-width: 534px;
+  margin-bottom: 24px;
+  height: 45px;
+  width: 534px;
 
 
 }
 
 .message-one{
-    height: 166px;
-width: 534px;
-    margin-bottom: 33px;
+  height: 166px;
+  width: 534px;
+  margin-bottom: 20px;
 }
 
 .message-one::-webkit-input-placeholder {
     position:absolute;
     top: 17px;
     left: 11px;
-  }
-
-
-  .message-one , .subject , .naming , .emailing
-  {
-    font-family: $font-family3;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-letter-spacing: 0.01em;
-color: $color3;
-border: 3px solid $color25;
-
-  }
+  } 
 .message-one::placeholder , .subject::placeholder, .naming::placeholder, .emailing::placeholder{
     color: $color3;
      }
+
+.anket{
+  input{
+      font-family: $font-family3;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: $color3;
+  border: 3px solid $color25;
+  }
+}
+
+.naming , .emailing{
+  width: 255px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.validationError{
+  color:$errorColor;
+ 
+}
+
+.withError,.naming,.emailing{
+p{
+  color:$errorColor;
+  
+}
+padding-bottom:15px;
+}
