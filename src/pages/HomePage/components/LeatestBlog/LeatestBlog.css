@@ -1,0 +1,71 @@
+.leatest {
+  margin: 50px;
+}
+.leatest .header-title {
+  text-align: center;
+  padding-bottom: 39px;
+  font-family: Josefin;
+  color: #151875;
+}
+.leatest .card-group {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+}
+.leatest .card-group .card {
+  padding-bottom: 40px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+}
+.leatest .card-group .card .card-img-top {
+  border-radius: 10px;
+}
+.leatest .card-group .card .card-about {
+  display: flex;
+}
+.leatest .card-group .card .card-about .card-name {
+  padding: 20px 14px;
+  font-family: Josefin;
+  color: #151875;
+}
+.leatest .card-group .card .card-about .card-name:before {
+  content: "";
+  display: block;
+  background: url(./photo/Vector1.svg) no-repeat;
+  float: left;
+  width: 15px;
+  height: 15px;
+}
+.leatest .card-group .card .card-about .card-date {
+  padding: 20px 14px;
+  font-family: Josefin;
+  color: #151875;
+}
+.leatest .card-group .card .card-about .card-date:before {
+  content: "";
+  display: block;
+  background: url(./photo/Vector2.svg) no-repeat;
+  float: left;
+  width: 15px;
+  height: 15px;
+}
+.leatest .card-group .card .card-body {
+  margin-left: 20px;
+}
+.leatest .card-group .card .card-body .card-title {
+  font-family: Josefin;
+  color: #151875;
+}
+.leatest .card-group .card .card-body .card-title:hover, .leatest .card-group .card .card-body .read-more:hover {
+  color: #FB2E86;
+}
+.leatest .card-group .card .card-body .card-text {
+  font-family: Lato-Regular;
+  font-weight: 400;
+  line-height: 30px;
+  color: #72718F;
+}
+.leatest .card-group .card .card-body .read-more {
+  font-family: Lato-Regular;
+  color: #151875;
+}/*# sourceMappingURL=LeatestBlog.css.map */
