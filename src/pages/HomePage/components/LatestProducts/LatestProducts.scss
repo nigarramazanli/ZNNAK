@@ -1,0 +1,122 @@
+@import '../../../../variables';
+
+.latest-products {
+  max-width: 1177px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 71px;
+}
+.latest-products h1 {
+  text-align: center;
+  font-size: 42px;
+  line-height: 49px;
+  color: $color1;
+  font-family: $font-family5;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.latest-products a {
+  font-family: $font-family3;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color1;
+  text-decoration: none;
+  cursor: pointer;
+}
+.latest-products a:first-child {
+  color: $color2;
+  text-decoration: underline;
+}
+.shop-grid {
+  margin-top: 58px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 120px 37px;
+}
+.cardd .img1 {
+  margin-left: 73px;
+  margin-top: 33px;
+}
+.cardd .img2 {
+  margin-left: 58px;
+  margin-top: 25px;
+}
+.cardd .img3 {
+  margin-left: 69px;
+  margin-top: 38px;
+}
+.cardd .img4 {
+  margin-left: 54px;
+}
+.cardd .img5 {
+  margin-left: 36px;
+  margin-top: 13px;
+}
+.cardd .img6 {
+  margin-left: 5px;
+  margin-top: 16px;
+}
+.cardd {
+  width: 360px;
+  height: 269.96px;
+  background: #f7f7f7;
+}
+.cardd:hover {
+  background: $white;
+}
+.cardd img {
+  margin-left: 10px;
+}
+.titlee,
+.newprice {
+  font-family: $font-family5;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color1;
+}
+.titlee {
+  margin-right: 130px;
+}
+.newprice {
+  margin-right: 8px;
+}
+
+.price {
+  font-family: $font-family5;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: line-through;
+  color: $color2;
+}
+.icon div {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: $bg-color3;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  display: none;
+}
+.cardd:hover + .icon {
+  display: block;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+  top: 146px;
+  left: 15px;
+}
+.grid-item {
+  position: relative;
+}

@@ -1,4 +1,5 @@
 import './hero.scss';
+import { Link } from 'react-router-dom';
 import armchair from './photo/armchair.png';
 import ellipse1 from './photo/Ellipse60.png';
 import ellipse2 from './photo/Ellipse61.png';
@@ -31,9 +32,11 @@ export const Hero = () => {
                 in phasellus non in justo.
               </p>
             </div>
-            <button className="pink-button">
-              <p>Shop Now</p>
-            </button>
+            <div className="button-hero">
+              <Link to="./grid-default" className="shop">
+                Shop Now
+              </Link>
+            </div>
           </div>
         </div>
         <div className="right">
