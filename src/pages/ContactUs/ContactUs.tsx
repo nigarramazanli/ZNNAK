@@ -1,7 +1,34 @@
 import './ContactUs.scss';
+import * as yup from 'yup';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
 import hehehe from './photo/Group 124.svg';
 
+interface ContactUsFormData {
+  firstName: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+const schema = yup
+  .object({
+    firstName: yup.string().required('You must enter your name'),
+    email: yup.string().required('You must enter your email'),
+    subject: yup.string().required("You must enter your message's subject"),
+    message: yup.string().required('Please write your message'),
+  })
+  .required();
+
 export const ContactUs = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<ContactUsFormData>({
+    resolver: yupResolver(schema),
+  });
+  const onSubmit: SubmitHandler<ContactUsFormData> = (data) => console.log(data);
+
   return (
     <div className="contactUs">
       <div className="firstPart">
@@ -61,20 +88,30 @@ export const ContactUs = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices tristique amet erat
             vitae eget dolor los vitae lobortis quis bibendum quam.
           </p>
-          <form className="inputs" action="">
+          <form className="inputs" onSubmit={handleSubmit(onSubmit)}>
             <div className="question-box">
               <div className="box">
                 <div className="anket">
                   <div className="name">
-                    <input className="naming" typeof="text" placeholder="Your Name*"></input>
-                    <input className="emailing" typeof="email" placeholder="Your E-mail*"></input>
+                    <div className={errors.firstName ? 'naming withError' : 'naming'}>
+                      <input className='naming'  typeof="text" placeholder="Your Name*" {...register('firstName', { required: true })}></input>
+                      <p className="validationError">{errors.firstName?.message}</p>
+                    </div>
+                    
+                    <div className={errors.email ? 'emailing withError' : 'emailing'}>
+                      <input className='emailing'  typeof="email" placeholder="Your E-mail*" {...register('email', { required: true })}></input>
+                      <p className="validationError">{errors.email?.message}</p>
+                    </div>
+                    
                   </div>
-                  <div>
-                    <input className="subject" typeof="text" placeholder="Subject*"></input>
+                  <div className={errors.subject ? 'subject withError' : 'subject'}>
+                    <input className='subject'  typeof="text" placeholder="Subject*" {...register('subject', { required: true })}></input>
                   </div>
-                  <div>
-                    <input className="message-one" type=" text" placeholder="Type Your Message*" />
+                  <p className="validationError">{errors.subject?.message}</p>
+                  <div className={errors.message ? 'message-one with-error' : 'message-one'}>
+                    <input className='message-one'  type=" text" placeholder="Type Your Message*" {...register('message', { required: true })}/>
                   </div>
+                  <p className="validationError">{errors.message?.message}</p>
                 </div>
                 <div className="button">
                   <button className="send">Send Mail</button>

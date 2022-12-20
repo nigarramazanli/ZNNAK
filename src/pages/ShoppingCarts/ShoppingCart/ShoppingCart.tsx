@@ -1,10 +1,10 @@
 interface IShoppingCartProps {
-  ShoppingCartProduct: string;
+  shoppingCartProduct: string;
   btnx: string;
-  ProductName: string;
-  ProductColor: string;
-  ProductSize: string;
-  ShoppingCartPrice: number;
+  productName: string;
+  productColor: string;
+  productSize: string;
+  shoppingCartPrice: number;
   minusBtn: string;
   numberOfItems: number;
   plusBtn: string;
@@ -13,39 +13,39 @@ interface IShoppingCartProps {
 }
 export const ShoppingCart = (props: IShoppingCartProps) => {
   const {
-    ShoppingCartProduct,
+    shoppingCartProduct,
     btnx,
-    ProductName,
-    ProductColor,
-    ProductSize,
-    ShoppingCartPrice,
+    productName,
+    productColor,
+    productSize,
+    shoppingCartPrice,
     minusBtn,
     plusBtn,
     totalPrice,
     belowLine,
-    numberOfItems
+    numberOfItems,
   } = props;
   return (
-      <div className="ShoppingCartItem">
-        <div className="ShoppingCartItemMain">
-          <div className="ShoppingCartPhoto">
-            <img className="ShoppingCartProduct" src={ShoppingCartProduct} alt="" />
+      <div className="shopping-cart-item">
+        <div className="shopping-cart-item-main">
+          <div className="shopping-cart-photo">
+            <img className="shopping-cart-product" src={shoppingCartProduct} alt="" />
             <img className="btnx" src={btnx} alt="" />
           </div>
-          <div className="ShoppingCartInfo">
-            <p className="ProductName">{ProductName}</p>
-            <p className="ProductColor">{ProductColor}</p>
-            <p className="ProductSize">{ProductSize}</p>
+          <div className="shopping-cart-info">
+            <p className="product-name">{productName}</p>
+            <p className="product-color">{productColor}</p>
+            <p className="product-size">{productSize}</p>
           </div>
-          <p className="ShoppingCartPrice">${ShoppingCartPrice}.00</p>
-          <div className="ShoppingCartButton">
-            <button className="minusBtn">{minusBtn}</button>
-            <p className="numberOfItems">{numberOfItems}</p>
-            <button className="plusBtn">{plusBtn}</button>
+          <p className="shopping-cart-price">${shoppingCartPrice}.00</p>
+          <div className="shopping-cart-button">
+            <button className="minus-btn">{minusBtn}</button>
+            <p className="number-of-items">{numberOfItems}</p>
+            <button className="plus-btn">{plusBtn}</button>
           </div>
-          <p className="totalPrice">${totalPrice}.00</p>
+          <p className="total-price">${totalPrice}.00</p>
         </div>
-        <img className="belowLine" src={belowLine} alt="" />
+        <img className="below-line" src={belowLine} alt="" />
       </div>
   );
 };

@@ -33,7 +33,7 @@
             } 
             .anket{
                 .validation-error{
-                    color:rgba(245, 81, 81, 0.904);
+                    color:$errorColor;
                 }
                 input{
                     width: 445px;
