@@ -1,9 +1,9 @@
 import './ShopexOffer.scss';
+import { Offer } from '../../../../components/Offer/Offer';
 import cashback from './cashback 1.png';
 import delivery from './free-delivery 1.png';
 import quality from './premium-quality 1.png';
 import support from './24-hours-support 1.png';
-import { Offer } from '../../../../components/Offer/Offer';
 
 export const ShopexOffer = () => {
   return (

@@ -1,6 +1,6 @@
 import lupaplus from './lupaplus.png';
-import qalp from './qalp.png';
 import marketarabasi from './marketarabasi.png';
+import qalp from './qalp.png';
 
 interface IFeaturedProductsProps {
   imgSrc: string;
@@ -27,11 +27,13 @@ export const FeaturedProduct = (props: IFeaturedProductsProps) => {
         <p>${price}.00</p>
       </div>
       <div className="icons">
-        <div><img src={marketarabasi} alt="" /></div>
+        <div>
+          <img src={marketarabasi} alt="" />
+        </div>
         <img src={qalp} alt="" />
         <img src={lupaplus} alt="" />
       </div>
-      <button className='buttonnn'>View Details</button>
+      <button className="buttonnn">View Details</button>
     </div>
   );
 };

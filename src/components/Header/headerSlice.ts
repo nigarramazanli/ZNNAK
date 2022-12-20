@@ -12,11 +12,6 @@ const initialState: HeaderState = {
     currentUser: undefined,
 };
 
-interface LoadUserPayload {
-    name: string;
-    lastName: string;
-}
-
 export const headerSlice = createSlice({
     name: 'header',
     initialState: initialState,

@@ -135,8 +135,9 @@ export const FeaturedProducts = () => {
     <div className="featured-products">
       <h1>Featured Products</h1>
       <div className="chairs">
-        {products[chosenProducts].map((product, index) => (
+        {products[chosenProducts].map((product) => (
           <FeaturedProduct
+            key={product.id}
             imgSrc={product.imgSrc}
             title={product.title}
             code={product.code}

@@ -1,14 +1,18 @@
 import './SignUpPage.scss';
-import { useDispatch } from 'react-redux';
 import { register } from './signupPageSlice';
+import { useDispatch } from 'react-redux';
 
 export const SignUpPage = () => {
   const dispatch = useDispatch();
-  const registerClickHandler = () => dispatch(register({
-    name: 'Nigar', lastName: 'Akbarli',
-    email: 'mail@mail.com',
-    password: '12345'
-  }));
+  const registerClickHandler = () =>
+    dispatch(
+      register({
+        name: 'Nigar',
+        lastName: 'Akbarli',
+        email: 'mail@mail.com',
+        password: '12345',
+      }),
+    );
   return (
     <div className="signup">
       <div className="signup-box">
@@ -17,7 +21,9 @@ export const SignUpPage = () => {
           <input type="text" placeholder="Username" />
           <input type="email" placeholder="Email Address" />
           <input type="password" placeholder="Password" />
-          <button type='button' onClick={registerClickHandler}>Sign Up</button>
+          <button type="button" onClick={registerClickHandler}>
+            Sign Up
+          </button>
         </form>
         <div className="login">
           <span>Already have an account?</span>

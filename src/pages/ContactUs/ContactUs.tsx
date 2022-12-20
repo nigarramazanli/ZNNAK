@@ -94,22 +94,41 @@ export const ContactUs = () => {
                 <div className="anket">
                   <div className="name">
                     <div className={errors.firstName ? 'naming withError' : 'naming'}>
-                      <input className='naming'  typeof="text" placeholder="Your Name*" {...register('firstName', { required: true })}></input>
+                      <input
+                        className="naming"
+                        typeof="text"
+                        placeholder="Your Name*"
+                        {...register('firstName', { required: true })}
+                      ></input>
                       <p className="validationError">{errors.firstName?.message}</p>
                     </div>
-                    
+
                     <div className={errors.email ? 'emailing withError' : 'emailing'}>
-                      <input className='emailing'  typeof="email" placeholder="Your E-mail*" {...register('email', { required: true })}></input>
+                      <input
+                        className="emailing"
+                        typeof="email"
+                        placeholder="Your E-mail*"
+                        {...register('email', { required: true })}
+                      ></input>
                       <p className="validationError">{errors.email?.message}</p>
                     </div>
-                    
                   </div>
                   <div className={errors.subject ? 'subject withError' : 'subject'}>
-                    <input className='subject'  typeof="text" placeholder="Subject*" {...register('subject', { required: true })}></input>
+                    <input
+                      className="subject"
+                      typeof="text"
+                      placeholder="Subject*"
+                      {...register('subject', { required: true })}
+                    ></input>
                   </div>
                   <p className="validationError">{errors.subject?.message}</p>
                   <div className={errors.message ? 'message-one with-error' : 'message-one'}>
-                    <input className='message-one'  type=" text" placeholder="Type Your Message*" {...register('message', { required: true })}/>
+                    <input
+                      className="message-one"
+                      type=" text"
+                      placeholder="Type Your Message*"
+                      {...register('message', { required: true })}
+                    />
                   </div>
                   <p className="validationError">{errors.message?.message}</p>
                 </div>

@@ -1,18 +1,18 @@
 import './ShoppingCarts.scss';
 import { ShoppingCart } from './ShoppingCart/ShoppingCart';
 import btnx from './photo/x-button.svg';
+import icon1 from './photo/uil_check.svg';
 import line from './photo/line.svg';
 import product1 from './photo/product1.png';
 import product2 from './photo/product2.png';
 import product3 from './photo/product3.png';
 import product4 from './photo/product4.png';
 import product5 from './photo/product5.png';
-import icon1 from './photo/uil_check.svg' ;
 
-export const ShoppingCarts  = () => {
+export const ShoppingCarts = () => {
   const products = [
     {
-      id:1,
+      id: 1,
       shoppingCartProduct: product1,
       btnx: btnx,
       productName: 'Ut diam consequat',
@@ -26,7 +26,7 @@ export const ShoppingCarts  = () => {
       belowLine: line,
     },
     {
-      id:2,
+      id: 2,
       shoppingCartProduct: product2,
       btnx: btnx,
       productName: 'Vel faucibus posuere',
@@ -40,7 +40,7 @@ export const ShoppingCarts  = () => {
       belowLine: line,
     },
     {
-      id:3,
+      id: 3,
       shoppingCartProduct: product3,
       btnx: btnx,
       productName: 'Ac vitae vestibulum',
@@ -54,7 +54,7 @@ export const ShoppingCarts  = () => {
       belowLine: line,
     },
     {
-      id:4,
+      id: 4,
       shoppingCartProduct: product4,
       btnx: btnx,
       productName: 'Elit massa diam',
@@ -68,7 +68,7 @@ export const ShoppingCarts  = () => {
       belowLine: line,
     },
     {
-      id:5,
+      id: 5,
       shoppingCartProduct: product5,
       btnx: btnx,
       productName: 'Proin pharetra elementum',
@@ -80,7 +80,7 @@ export const ShoppingCarts  = () => {
       plusBtn: '+',
       totalPrice: 219.0,
       belowLine: line,
-    }
+    },
   ];
 
   return (
@@ -94,7 +94,7 @@ export const ShoppingCarts  = () => {
             <p className="shopping-carts-text-four">Total</p>
           </div>
           <div className="shopping-carts-items">
-            {products.map((product,index ) => (
+            {products.map((product, index) => (
               <ShoppingCart
                 key={index}
                 shoppingCartProduct={product.shoppingCartProduct}
@@ -117,36 +117,36 @@ export const ShoppingCarts  = () => {
           </div>
         </div>
         <div className="shopping-carts-second">
-          <h1 className='shopping-cartsH1'>Cart Totals</h1>
-          <div className='shopping-carts-second-up'>
-            <div className='shopping-carts-second-up-in'>
-              <div className='shopping-carts-second-up-in-par'>
+          <h1 className="shopping-cartsH1">Cart Totals</h1>
+          <div className="shopping-carts-second-up">
+            <div className="shopping-carts-second-up-in">
+              <div className="shopping-carts-second-up-in-par">
                 <p>Subtotals:</p>
                 <p>£219.00</p>
               </div>
-              <img className='line-above' src={line} alt="" />
-              <div className='shopping-carts-second-up-in-par'>
+              <img className="line-above" src={line} alt="" />
+              <div className="shopping-carts-second-up-in-par">
                 <p>Totals:</p>
                 <p>£325.00</p>
               </div>
-              <img className='line-above' src={line} alt="" />
-              <div className='icon-and-text'>
-              <img className='icon1' src={icon1} alt="" />
-              <p>Shipping & taxes calculated at checkout</p>
+              <img className="line-above" src={line} alt="" />
+              <div className="icon-and-text">
+                <img className="icon1" src={icon1} alt="" />
+                <p>Shipping & taxes calculated at checkout</p>
               </div>
-                  <button className='btn-green'>Proceed To Checkout</button>
+              <button className="btn-green">Proceed To Checkout</button>
             </div>
           </div>
-          <h1 className='shopping-cartsH2'>Calculate Shopping</h1>
-          <div className='shopping-carts-second-down'>
-                <div className='shopping-carts-second-down-in'>
-            <p className='Bangladesh'>Bangladesh</p>
-            <img className='line-small' src={line} alt="" />
-            <p className='Dhaka'>Mirpur Dhaka - 1200</p>
-            <img className='line-small' src={line} alt="" />
-            <p className='Postal'>Postal Code</p>
-            <img className='line-small' src={line} alt="" />
-            <button className='btn-pink'>Calculate Shiping</button>
+          <h1 className="shopping-cartsH2">Calculate Shopping</h1>
+          <div className="shopping-carts-second-down">
+            <div className="shopping-carts-second-down-in">
+              <p className="Bangladesh">Bangladesh</p>
+              <img className="line-small" src={line} alt="" />
+              <p className="Dhaka">Mirpur Dhaka - 1200</p>
+              <img className="line-small" src={line} alt="" />
+              <p className="Postal">Postal Code</p>
+              <img className="line-small" src={line} alt="" />
+              <button className="btn-pink">Calculate Shiping</button>
             </div>
           </div>
         </div>
