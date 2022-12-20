@@ -97,7 +97,7 @@
 .icons {
   display: none;
 }
-.featured-products .buttonnn{
+.featured-products .buttonnn {
   display: none;
 }
 .green {
@@ -135,4 +135,18 @@
   display: flex;
   gap: 7px;
   justify-content: center;
+  button {
+    background: #febad7;
+    border: #febad7;
+    border-radius: 10px;
+    width: 16px;
+    height: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    width: 24px;
+    height: 4px;
+    background: $color2;
+    border-radius: 10px;
+  }
 }
