@@ -130,7 +130,7 @@ export const GridDefault = () => {
             </div>
             <div className="view">
               <p>View:</p>
-              <div className="icon">
+              <div className="icons-grid">
                 <img src={list} alt="" />
                 <img src={clarity} alt="" />
               </div>
