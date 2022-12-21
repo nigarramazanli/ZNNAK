@@ -39,7 +39,7 @@ export const Header = () => {
                     {headerState.currentUser.name} {headerState.currentUser.lastName}
                   </div>
                 ) : (
-                  <Link className="numphon" to="/signup">
+                  <Link className="numphon" to="/login">
                     Login
                   </Link>
                 )}
@@ -56,19 +56,19 @@ export const Header = () => {
         <div className="big-navbar">
           <div className="navbar">
             <img className="hekto" src={Hekto} alt="" />
-            <a className="navlink" href="App.tsx">
+            <a className="navlink" href="/">
               Home <img className="little-vector" src={vector} alt="" />
             </a>
-            <Link to="" className="nav-link">
+            <Link to="/not-found" className="nav-link">
               Pages
             </Link>
-            <Link to="" className="nav-link">
-              Product
+            <Link to="/about-us" className="nav-link">
+              About us
             </Link>
             <Link to="./faq" className="nav-link">
               Faq
             </Link>
-            <Link to="" className="nav-link">
+            <Link to="/grid-default" className="nav-link">
               Shop
             </Link>
             <Link to="./contact-us" className="nav-link">
