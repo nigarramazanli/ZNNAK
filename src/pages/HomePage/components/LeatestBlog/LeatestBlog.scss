@@ -5,7 +5,7 @@
     .header-title{
         text-align: center;
         padding-bottom: 39px;
-        font-family: $font-family1;
+        font-family: $font-family5;
         color: $color1;
     }
     .card-group{
@@ -23,7 +23,7 @@
             display: flex;
             .card-name{
                 padding:20px 14px;
-                font-family: $font-family1;
+                font-family: $font-family5;
                 color: $color1;
             }
             .card-name:before{
@@ -51,7 +51,7 @@
         .card-body{
             margin-left: 20px;
             .card-title{
-                font-family: $font-family1;
+                font-family: $font-family5;
                 color: $color1;
                 
             }
