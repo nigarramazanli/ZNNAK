@@ -18,7 +18,7 @@
     margin-top: -310px;
 }
 .text-button p{
-    font-family: $font-family1;
+    font-family: $font-family5;
     letter-spacing: 1.5%;
     font-size: 35px;
     color: $color1;
@@ -31,7 +31,12 @@
     border-radius: 2px;
     color: $white;
     font-size: 17px;
-    font-family: $font-family1;
+    font-family: $font-family5;
     letter-spacing: 2%;
+    border:1px solid $color2
 }
-
+.text-button button:hover{
+    background-color: $white;
+    color:$color2;
+    border:1px solid $color2;
+}

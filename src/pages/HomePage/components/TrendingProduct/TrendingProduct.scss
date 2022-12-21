@@ -5,7 +5,7 @@
     .header_title{
         text-align: center;
         padding-bottom: 39px;
-        font-family: $font-family1;
+        font-family: $font-family5;
     }
     h1,h3,p{
         color:$color1;
@@ -28,10 +28,10 @@
             gap:12px;
             s{
                 color:$color4;
-                font-family: $font-family1;
+                font-family: $font-family5;
             }
             b{
-                font-family: $font-family1;
+                font-family: $font-family5;
             }
         }
     }
@@ -41,7 +41,7 @@
         justify-content: center;
         gap:29px;
         h3{
-            font-family: $font-family1;
+            font-family: $font-family5;
         }
         a{
             color:$color2;
@@ -54,7 +54,7 @@
             background-color: $bg-color2;
             h2{
                 color:$color1;
-                font-family: $font-family1;
+                font-family: $font-family5;
             }
             .card_img{
                 display: flex;
@@ -71,7 +71,7 @@
             background-color: $bg-color3;
             h2{
                 color:$color1;
-                font-family: $font-family1;
+                font-family: $font-family5;
             }
             .card_img{
                 display: flex;
@@ -85,7 +85,7 @@
             padding: 5px 25px;
         }
         s{
-            font-family: $font-family1;
+            font-family: $font-family5;
         }
         .card-right{
             margin:15px 9px;

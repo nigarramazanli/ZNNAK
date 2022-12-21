@@ -64,20 +64,21 @@ margin: 0;
     width: 290px;
     display: flex;
     justify-content: space-between;
- }
- .button-add{
-    width: 157px;
-    height: 45px;
-    background: $color2;
-    border-radius: 2px ;
-    border: none;
-    font-family: $font-family5;
-font-size: 17px;
-line-height: 20px;
-letter-spacing: 0.02em;
-color: $bg-color6;
-text-align: center;
- }
+    .button-add{
+      font-family: $font-family5;
+       padding: 16px 41px;
+       border: none;
+       background-color:$color2;
+       color: $white;
+       border-radius: 3px;
+       text-decoration: none;
+   }
+   .button-add:hover{
+       background-color: $white;
+       color:$color2;
+       border:1px solid $color2;
+   }
+}
 
  .brend{
     font-family: $font-family5;
