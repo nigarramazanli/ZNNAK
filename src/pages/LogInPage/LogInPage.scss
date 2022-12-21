@@ -1,0 +1,101 @@
+@import "../../variables";
+
+.loginpage-container{ 
+    max-width: 1920px; 
+    margin: auto; 
+    padding: 120px;
+} 
+.login-page{ 
+    max-width: 544px; 
+    height: 569px;
+    background-color: $white; 
+    box-shadow: 0px 0px 25px 10px $color18; 
+    margin: auto; 
+    text-align: center; 
+    padding-top: 50px;
+} 
+.headerandtext h1{ 
+    font-family: 'Josefin Sans'; 
+    font-size: 32px; 
+    line-height: 37.5px; 
+} 
+.headerandtext p{ 
+    font-family: $font-family3; 
+    font-size: 17px; 
+    line-height: 20.4px; 
+    color: $sign-in-color; 
+    margin-top: -14px; 
+} 
+form{ 
+    margin-top: 51px; 
+} 
+ .email-form1 { 
+    border: 1px solid #C2C5E1; 
+    background-color: $white; 
+    border-radius: 2px; 
+    width: 432px; 
+    height: 52px; 
+    font-size: 16px; 
+    color: $sign-in-color; 
+    line-height: 19.2px; 
+    font-family: $font-family3; 
+} 
+::placeholder {  
+    color: $sign-in-color; 
+    opacity: 1; 
+    padding-left: 13px; 
+  } 
+   
+ 
+.password-form1{ 
+    border: 1px solid #C2C5E1; 
+    background-color: $white; 
+    border-radius: 2px; 
+    width: 432px; 
+    height: 52px; 
+    font-size: 16px; 
+    color: $sign-in-color; 
+    line-height: 19.2px; 
+    font-family: $font-family3; 
+    margin-top: 23px; 
+} 
+.forget-password a{ 
+    font-family:$font-family3; 
+    color: $sign-in-color; 
+    font-size: 17px; 
+    line-height: 20.4px; 
+    text-decoration: none; 
+    margin-left: -265px; 
+} 
+.forget-password{ 
+    margin-top: 13px; 
+} 
+.login-page button{ 
+    width: 432px; 
+    height: 47px; 
+    background-color: $color2; 
+    border-radius: 3px; 
+    font-size: 17px; 
+    color: #FFFFFF; 
+    font-family: $font-family3; 
+    line-height: 20.4px; 
+    border-color:$color2 ; 
+    margin-top: 23px; 
+} 
+.account p{ 
+ font-family: $font-family3; 
+ color: $sign-in-color; 
+ font-size: 17px; 
+ line-height: 20.4px; 
+} 
+.account a{ 
+    font-family: $font-family3; 
+    color: $sign-in-color; 
+    font-size: 17px; 
+    line-height: 20.4px; 
+    text-decoration: none; 
+   }
+   .validation-error{
+    color:rgba(245, 81, 81, 0.904);
+    text-align: start;
+  }
