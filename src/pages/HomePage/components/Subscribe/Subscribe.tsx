@@ -8,7 +8,7 @@ export const Subscribe = () => {
         <p>
           Get Leatest Update By Subscribe
           <br />
-          0ur Newslater
+          Our Newslater
         </p>
         <button className="subscribe-button">Shop now</button>
       </div>

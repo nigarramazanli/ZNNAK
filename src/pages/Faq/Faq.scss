@@ -14,7 +14,7 @@
     .right{
         margin-right: 106px;
         .general-information{
-            font-family: $font-family1;
+            font-family: $font-family5;
             width: 500px;
             .right-header{
                 padding-bottom: 64px;
@@ -29,7 +29,7 @@
         .box{
             .question-box-header{
                 padding-bottom: 84px;
-                font-family: $font-family1;
+                font-family: $font-family5;
             } 
             .anket{
                 .validation-error{
@@ -81,7 +81,7 @@
                 }
             }
             .button-faq{
-                font-family: $font-family1;
+                font-family: $font-family5;
                 .send-faq{
                     padding: 16px 41px;
                     border: none;
@@ -90,12 +90,12 @@
                     border-radius: 3px;
                     text-decoration: none;
                 }
-                .send:hover{
+                .send-faq:hover{
                     background-color: $white;
                     color:$color2;
                     border:1px solid $color2;
-                }
+                }    
             }
         }
-    }
+    }   
 }

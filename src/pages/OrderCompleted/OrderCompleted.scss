@@ -92,3 +92,8 @@ width: 208px;
 height: 59px;
 border: none;
 }
+.orderBtn:hover{
+    background-color: $white;
+    color:$color2;
+    border:1px solid $color2;
+}

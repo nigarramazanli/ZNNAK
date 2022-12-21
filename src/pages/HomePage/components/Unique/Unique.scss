@@ -1,11 +1,14 @@
-@import '..//..//..//..//variables';
+@import '../../../../variables';
+
 .unique {
   background: $color12;
   margin-bottom: 132px;
   height: 580px;
   display: flex;
   align-items: center;
+
 }
+
 .unique-main {
   max-width: 1065px;
   margin-left: auto;
@@ -13,7 +16,9 @@
   height: 550px;
   display: flex;
   align-items: center;
+
 }
+
 .furniture {
   height: 550px;
   width: 558px;
@@ -36,12 +41,14 @@
   margin-bottom: 29px;
 }
 
+
 .cyan,
 .blue,
 .red {
   height: 11px;
   width: 11px;
 }
+
 .unique-text-one,
 .unique-text-two,
 .unique-text-three {
@@ -52,32 +59,39 @@
   letter-spacing: 0.015em;
   color: $color13;
   margin: 0;
+
 }
+
 .unique-text-one,
 .unique-text-three {
+
   line-height: 21px;
 }
+
 .unique-text-two {
   line-height: 28px;
 }
+
 .button-and-value {
   width: 290px;
   display: flex;
   justify-content: space-between;
-}
-.button-add {
-  width: 157px;
-  height: 45px;
-  background: $color2;
-  border-radius: 2px;
-  border: none;
-  font-family: $font-family5;
-  font-size: 17px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  color: $bg-color6;
-  text-align: center;
-  cursor: pointer;
+
+  .button-add {
+    font-family: $font-family5;
+    padding: 16px 41px;
+    border: none;
+    background-color: $color2;
+    color: $white;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+
+  .button-add:hover {
+    background-color: $white;
+    color: $color2;
+    border: 1px solid $color2;
+  }
 }
 
 .brend {
@@ -98,6 +112,7 @@
   color: $color1;
   margin: 0;
 }
+
 .brend-value {
   display: flex;
   flex-direction: column;
@@ -109,7 +124,9 @@
   margin-bottom: 13px;
   display: flex;
   gap: 12px;
+
 }
+
 .for-margin-two {
   margin-bottom: 38px;
   display: flex;
@@ -120,6 +137,7 @@
 .cyan {
   margin-top: 3px;
 }
+
 .blue {
   margin-top: 9px;
 }

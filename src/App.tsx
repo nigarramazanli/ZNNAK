@@ -5,7 +5,6 @@ import { Faq } from './pages/Faq/Faq';
 import { Footer } from './components/Footer/Footer';
 import { GridDefault } from './pages/GridDefault/GridDefault';
 import { Header } from './components/Header/Header';
-import { HectoDemo } from './pages/HectoDemo/HectoDemo';
 import { HomePage } from './pages/HomePage/HomePage';
 import { NotFound } from './pages/NotFound/NotFound';
 import { OrderCompleted } from './pages/OrderCompleted/OrderCompleted';
@@ -28,7 +27,6 @@ export const App = () => {
           <Route path="/product-details" element={<ProductDetails />} />
           <Route path="/shopping-carts" element={<ShoppingCarts />} />
           <Route path="/order-completed" element={<OrderCompleted />} />
-          <Route path="/hect-odemo" element={<HectoDemo />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/login" element={<LogInPage />} />

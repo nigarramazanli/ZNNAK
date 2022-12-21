@@ -4,6 +4,7 @@ import { FaqItem } from './components/FaqItem';
 import { Logos } from '../HomePage/components/Logos/Logos';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { baseUrl } from '../../constants';
 
 interface FaqFormData {
   name: string;
@@ -27,7 +28,16 @@ export const Faq = () => {
   } = useForm<FaqFormData>({
     resolver: yupResolver(schema),
   });
-  const onSubmit: SubmitHandler<FaqFormData> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<FaqFormData> = (data) => {
+    console.log(data);
+    fetch(`${baseUrl}/users`, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: { 'Content-Type': 'application/json' },
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+  };
   const faqs = [
     {
       id: 1,
