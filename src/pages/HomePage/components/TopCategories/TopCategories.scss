@@ -1,81 +1,84 @@
-@import '../../../../variables';
-
-.top-categories_container h1{
-   margin-top: 79px;
-   text-align: center;
-    font-size: 42px;
-    line-height: 49px;
-    color: $color1;
+@import '../../../../variables'; 
+ 
+.top-categories_container h1{ 
+   margin-top: 79px; 
+   text-align: center; 
+    font-size: 42px; 
+    line-height: 49px; 
+    color: $color1; 
+    font-family: $font-family1;  
+} 
+.top-categories_container{ 
+    max-width: 1920px; 
+    margin-left: auto; 
+    margin-right: auto; 
+} 
+.top-categories{ 
+    max-width: 1193px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex; 
+    gap: 39px; 
+     
+} 
+.circle{ 
+    width: 269px; 
+    height: 269px; 
+    border-radius: 50%; 
+    background-color: $bg-color8; 
+    margin-top: 19px; 
+} 
+.information1 .marka1{ 
+    text-align: center; 
+    margin-top: 36px; 
+    color: $color1; 
     font-family: $font-family1; 
-}
-.top-categories_container{
-    max-width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.top-categories{
-    max-width: 1193px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    gap: 39px;
-    
-}
-.circle{
-    width: 269px;
-    height: 269px;
-    border-radius: 50%;
-    background-color: $bg-color8;
-    margin-top: 19px;
-}
-.information1 .marka1{
-    text-align: center;
-    margin-top: 36px;
-    color: $color1;
-    font-family: $font-family1;
-    font-size: 20px;
-}
-.prices1{
-    text-align: center;
-    color: $color1;
-    font-family: $font-family1;
-    margin-top: -14px;
-}
-// .viewshop{
-//     width: 94px;
-//     height: 29px;
-//     border-radius: 2px;
-//     background-color: #08D15F;
-//     color: #FFFFFF;
-//     font-family: 'Josefin Sans';
-//     font-size: 12px;
-//     border-color:#08D15F ;
-//     margin-left: 86px;
-// }
-.three-button div{
-    width: 10px;
-    height: 9.89px;
-    border-radius: 50%;
-    border-color: $color2;
-    border-width: 1px;
-    background-color: $color2;
-    margin-top: -76px;
-}
-.three-button{
-    display: flex;
-    gap: 11.93px;
-    margin-top: 120px;
-    justify-content: center;
-    
-}
-.products-box{
-    width: 269px;
-    height: 269px;
-    background-color: $bg-color8;
-    box-shadow: 0px 8px 40px rgb(49 32 138 / 5%);
-    border-radius: 50%;
-}
-.products-box img{
-    margin-left: 45px;
-    margin-top: 59px;
+    font-size: 20px; 
+} 
+.prices1{ 
+    text-align: center; 
+    color: $color1; 
+    font-family: $font-family1; 
+    margin-top: -14px; 
+} 
+// .viewshop{ 
+//     width: 94px; 
+//     height: 29px; 
+//     border-radius: 2px; 
+//     background-color: #08D15F; 
+//     color: #FFFFFF; 
+//     font-family: 'Josefin Sans'; 
+//     font-size: 12px; 
+//     border-color:#08D15F ; 
+//     margin-left: 86px; 
+// } 
+.three-button button{ 
+    width: 10px; 
+    height: 14px; 
+    border-radius: 50%; 
+    border-color: $color2; 
+    border-width: 1px; 
+    margin-top: -76px; 
+} 
+.three-button button:hover{ 
+    width: 10px; 
+    height: 14px; 
+    background-color: $color2; 
+} 
+.three-button{ 
+    display: flex; 
+    gap: 11.93px; 
+    margin-top: 120px; 
+    justify-content: center; 
+} 
+.products-box{ 
+    width: 269px; 
+    height: 269px; 
+    background-color: $bg-color8; 
+    box-shadow: 0px 8px 40px rgb(49 32 138 / 5%); 
+    border-radius: 50%; 
+} 
+.products-box img{ 
+    margin-left: 45px; 
+    margin-top: 59px; 
 }

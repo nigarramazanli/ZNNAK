@@ -1,18 +1,18 @@
 interface ITopCategoriesProps {
-  imgSrc1: string;
-  marka1: string;
-  price1: number;
+  imgSrcc: string;
+  marka: string;
+  priceofitem: number;
 }
 export const TopCategory = (props: ITopCategoriesProps) => {
-  const { imgSrc1, marka1, price1 } = props;
+  const { imgSrcc, marka, priceofitem } = props;
   return (
     <div className="box-container">
       <div className="products-box">
-        <img src={imgSrc1} alt="" />
+        <img src={imgSrcc} alt="" />
       </div>
       <div className="information1">
-        <h1 className="marka1">{marka1}</h1>
-        <p className="prices1">${price1}.00</p>
+        <h1 className="marka1">{marka}</h1>
+        <p className="prices1">${priceofitem}.00</p>
       </div>
     </div>
   );
