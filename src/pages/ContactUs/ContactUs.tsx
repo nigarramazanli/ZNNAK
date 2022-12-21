@@ -1,6 +1,7 @@
 import './ContactUs.scss';
 import * as yup from 'yup';
 import { SubmitHandler, useForm } from 'react-hook-form';
+import { baseUrl } from '../../constants';
 import { yupResolver } from '@hookform/resolvers/yup';
 import hehehe from './photo/Group 124.svg';
 
@@ -27,7 +28,16 @@ export const ContactUs = () => {
   } = useForm<ContactUsFormData>({
     resolver: yupResolver(schema),
   });
-  const onSubmit: SubmitHandler<ContactUsFormData> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<ContactUsFormData> = (data) => {
+    console.log(data);
+    fetch(`${baseUrl}/users`, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: { 'Content-Type': 'application/json' },
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+  };
 
   return (
     <div className="contactUs">
