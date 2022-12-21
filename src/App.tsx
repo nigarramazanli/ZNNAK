@@ -15,6 +15,7 @@ import { Route, Routes } from 'react-router-dom';
 import { ShoppingCarts } from './pages/ShoppingCarts/ShoppingCarts';
 import { SignUpPage } from './pages/SignUpPage/SignUpPage';
 import React from 'react';
+import { LogInPage } from './pages/LogInPage/LogInPage';
 
 export const App = () => {
   return (
@@ -30,6 +31,7 @@ export const App = () => {
           <Route path="/hect-odemo" element={<HectoDemo />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/login" element={<LogInPage />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/not-found" element={<NotFound />} />
