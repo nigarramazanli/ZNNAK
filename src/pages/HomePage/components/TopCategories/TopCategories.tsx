@@ -30,7 +30,7 @@ const categories = [
       id: 4, 
       imgSrcc: item4, 
       marka: 'Mini LCW Chair', 
-      priceofitem: 56, 
+      priceofitem: 56,
     }, 
   ], 
   [ 
@@ -76,7 +76,7 @@ const categories = [
       id: 2, 
       imgSrcc: item2, 
       marka: 'Mini LCW Chair', 
-      priceofitem: 56, 
+      priceofitem: 56,
     }, 
  
     { 
