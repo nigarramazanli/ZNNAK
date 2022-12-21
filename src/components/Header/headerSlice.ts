@@ -1,6 +1,6 @@
 import { User } from '../../models/User';
 import { createSlice } from '@reduxjs/toolkit';
-import { register } from '../../pages/SignUpPage/signupPageSlice';
+import { registerr } from '../../pages/SignUpPage/signupPageSlice';
 
 interface HeaderState {
     itemsCount: number;
@@ -17,7 +17,7 @@ export const headerSlice = createSlice({
     initialState: initialState,
     reducers: {},
     extraReducers: (builder) => {
-        builder.addCase(register, (state, action) => {
+        builder.addCase(registerr, (state, action) => {
             const payload = action.payload;
             const user: User = {
                 id: 4,
