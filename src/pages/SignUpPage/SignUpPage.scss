@@ -10,7 +10,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 544px;
-  height: 524px;
+  height: 600px;
   background: $white;
   box-shadow: $box-shadow;
   padding-top: 50px;
@@ -18,7 +18,7 @@
   
 }
 .signup-box h1 {
-  font-family: $font-family1 ;
+  font-family: $font-family5 ;
   font-size: 32px;
   line-height: 38px;
   color: $black;
@@ -28,6 +28,19 @@
   display: flex;
   flex-direction: column;
   gap: 23px;
+  .validation-error{
+    color:rgba(245, 81, 81, 0.904);
+    text-align: start;
+  }
+}
+.username-signup{
+  width: 432px;
+  &.with-error{
+    margin-bottom: -15px;
+    input{
+        border: 1px solid red;
+    }   
+}
 }
 .signup-box input {
   width: 432px;

@@ -1,0 +1,99 @@
+@import "../../variables";
+
+.boxes-grid{
+    width: 273px;
+    height: 363px;
+    margin-bottom: 81px;
+    margin-right:53px;
+    .chair-box-grid{
+        position: relative;
+        width: 270px;
+        height: 280px;
+        margin-bottom: 18px;
+        background-color: $bg-color8;
+        img{
+            padding: 45px;
+        }
+    }
+    .about-grid{
+        text-align: center;
+        .about-title-grid{
+            font-family: $font-family1;
+            color: $color1;
+            margin-bottom: 8px;
+        }
+        .color-button-grid{
+            justify-content: center;
+            display: flex;
+            margin-bottom: 15px;
+            gap:6px;
+            .button-orange{
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                border:none;
+                background-color: $bg-color26;
+            }
+            .button-pink{
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                border:none;
+                background-color: $bg-color27;
+            }
+            .button-blue{
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                border:none;
+                background-color: $bg-color28;
+            }
+        }
+        .price-grid{
+            justify-content: center;
+            display: flex;
+            gap:10px;
+            
+            p{
+                font-family: $font-family5;
+                color:$color1;
+                margin: 0;
+            }
+            del{
+                font-family: $font-family1;
+                color:$color2;
+            }
+        }
+    }
+}
+.boxes-grid:hover{
+    .chair-box-grid{
+        background-color: $bg-color29;
+    }  
+    .icon-grid{
+        position: absolute;
+        display: block;
+        .icon-button{
+            display: block;
+        }
+        .icon-button:hover{
+            display: block;
+            background-color: $white;
+        }
+    }
+}
+.icon-grid{
+    display: none;
+    width: 30px;
+    margin-top: -235px;
+    margin-left: 11px;
+    .icon-button{
+        display: none;
+        border-radius: 50%;
+        padding: 11px;
+    }
+    .icon-button:hover{
+        display: none;
+        background-color: $white;
+    }
+}

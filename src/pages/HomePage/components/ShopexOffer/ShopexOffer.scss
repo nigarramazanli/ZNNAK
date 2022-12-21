@@ -1,0 +1,22 @@
+@import '../../../../variables';
+.shopex-offer {
+  max-width: 1177px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 58px;
+  margin-bottom: 150px;
+}
+.shopex-offer h1 {
+  text-align: center;
+  font-size: 42px;
+  line-height: 49px;
+  color: $color1;
+  font-family: $font-family5;
+}
+.offers {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  text-align: center;
+}
+

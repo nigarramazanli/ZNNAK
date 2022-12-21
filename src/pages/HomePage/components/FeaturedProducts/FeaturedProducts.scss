@@ -1,0 +1,152 @@
+@import '../../../../variables';
+.featured-products {
+  max-width: 1177px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 129px;
+  h1 {
+    text-align: center;
+    font-size: 42px;
+    line-height: 49px;
+    color: $color1;
+    font-family: $font-family5;
+    margin-bottom: 48px;
+  }
+}
+.chairs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+.chair-box {
+  position: relative;
+  width: 270px;
+  height: 361px;
+  border: 0px solid $white;
+  background: $white;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  h2 {
+    font-family: $font-family5;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color2;
+    margin-bottom: 0;
+  }
+  p {
+    font-family: $font-family5;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color1;
+  }
+}
+.chair-box:hover {
+  background: #2f1ac4;
+  .info h2 {
+    color: $white;
+  }
+  .info p {
+    color: $white;
+  }
+  .icons {
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .buttonnn {
+    display: block;
+    position: absolute;
+    top: 198px;
+    left: 88px;
+    background: $color23;
+    border-radius: 2px;
+    border: $color23;
+    width: 94px;
+    height: 29px;
+    font-family: $font-family5;
+    font-weight: 500;
+    font-size: 12px;
+    color: $white;
+    cursor: pointer;
+  }
+}
+.greybox {
+  height: 236px;
+  background-color: $bg-color8;
+  img {
+    margin-top: 40px;
+  }
+}
+.icons div {
+  background: #eeeffb;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons {
+  display: none;
+}
+.featured-products .buttonnn {
+  display: none;
+}
+.green {
+  width: 14px;
+  height: 4px;
+  background: #05e6b7;
+  border: #05e6b7;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.pink {
+  width: 14px;
+  height: 4px;
+  background: #f701a8;
+  border: #f701a8;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bluee {
+  width: 14px;
+  height: 4px;
+  background: #00009d;
+  border: #00009d;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.colors {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 12px;
+}
+.pink-rectangles {
+  margin-top: 53px;
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  button {
+    background: #febad7;
+    border: #febad7;
+    border-radius: 10px;
+    width: 16px;
+    height: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    width: 24px;
+    height: 4px;
+    background: $color2;
+    border-radius: 10px;
+  }
+}

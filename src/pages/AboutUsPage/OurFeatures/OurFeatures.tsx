@@ -14,7 +14,9 @@ export const OurFeatures = () => {
           <Offer
             imagesrc={delivery}
             title={'Free Delivery'}
-            info={'Why pay for shipping! You’re invited! Get Free Shipping. No minimums.  No coupon required.'}
+            info={
+              'Why pay for shipping! You’re invited! Get Free Shipping. No minimums.  No coupon required.'
+            }
           />
         </div>
         <div className="yellow">

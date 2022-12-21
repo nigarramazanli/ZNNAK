@@ -1,0 +1,256 @@
+@import '..//..//variables' ;
+
+
+.contactUs { 
+    max-width: 1920px; 
+    height: 1396px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+  } 
+   
+  .firstPart { 
+    width: 1156px; 
+    height: 461px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    margin-right: 15px;
+    
+  } 
+   
+  .secondPart { 
+    width: 1273px; 
+    height: 683px; 
+    margin-left: 100px;
+    display: flex;
+  }
+
+
+  .firstPartOne , .firstPartTwo
+  {
+width: 550px;
+height: 225px;
+  }
+
+
+  .firstPartOne .header-cu{
+font-family: $font-family5;
+font-size: 36px;
+line-height: 48px;
+color: $color1;
+margin: 0;
+margin-bottom: 13px;
+  }
+
+  .paragraph-cu{
+    font-family: $font-family3;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+color: $color3;
+margin: 0;
+margin-bottom: 50px;
+  }
+  .smallCircles{
+    display: flex;
+    height: 25px;
+    gap: 14px;
+  }
+  .sBlue , .sPink , .sCyan{
+    width: 25px;
+height: 25px;
+border-radius: 50%;
+  } 
+
+  .sBlue{
+    background: $bg-color12 ;
+  }
+  .sPink
+  {
+    background: $bg-color13;
+  }
+  .sCyan{
+    background: $bg-color14;
+  }
+
+  .paragraph-cu-pic-n{
+    width: 237px;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .paragraph-cu-pic{
+    width: 489px;
+    height: 53px;
+    display: flex;
+    gap: 32px;
+    margin-bottom: 49px;
+  }
+
+  .firstPartTwo{
+    display: flex;
+    flex-direction: column;
+  }
+  .two-parag{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .paragraph-cu-one{
+    margin: 0;
+    width: 177px;
+    height: 26px;
+    font-family: $font-family3;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+color: $color3;
+  }
+
+  .bGreen, .bBlue , .bPink , .bOrange{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+  }
+  .bGreen
+  {
+    background: $bg-color15;
+  }
+
+  .bBlue{
+    background: $bg-color16;
+  }
+
+  .bPink{
+    background: $color2;
+  }
+  .bOrange{
+    background:$bg-color17;
+  }
+  .firstPartTwo
+  {.header-cu{
+    font-family: $font-family5;
+    font-size: 36px;
+    line-height: 48px;
+    color: $color1;
+    margin: 0;
+    margin-bottom: 26px;
+  }}
+
+.secondPartOne{
+    height: 573px;
+    width: 550px;
+}
+
+.headPart
+{
+    margin-top: 32px;
+    margin-bottom: 46px;
+    font-family: $font-family5;
+font-size: 36px;
+line-height: 48px;
+color: $color1;
+}
+
+.paragPart{
+    font-family: $font-family3;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+color: $color3;
+margin-bottom: 46px;
+}
+
+
+ 
+    .send{
+        height: 48px;
+        width: 156px;
+        background-color: $color2;
+        border-radius: 3px;
+        border-color: $color2;
+        p{
+            font-family: $font-family5;
+            color: $white;
+        }
+    }      
+    .send:hover{
+        background-color: $white;
+        p{
+            color:$color2;
+        }
+    }
+
+
+.name{
+  display: flex;
+  gap: 23px;
+  margin-bottom: 0px;
+}
+
+
+
+.subject{
+  margin-bottom: 24px;
+  height: 45px;
+  width: 534px;
+
+
+}
+
+.message-one{
+  height: 166px;
+  width: 534px;
+  margin-bottom: 20px;
+}
+
+.message-one::-webkit-input-placeholder {
+    position:absolute;
+    top: 17px;
+    left: 11px;
+  } 
+.message-one::placeholder , .subject::placeholder, .naming::placeholder, .emailing::placeholder{
+    color: $color3;
+     }
+
+.anket{
+  input{
+      font-family: $font-family3;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: $color3;
+  border: 3px solid $color25;
+  }
+}
+
+.naming , .emailing{
+  width: 255px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.validationError{
+  color:$errorColor;
+ 
+}
+
+.withError,.naming,.emailing{
+p{
+  color:$errorColor;
+  
+}
+padding-bottom:15px;
+}

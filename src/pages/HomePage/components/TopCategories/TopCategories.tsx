@@ -10,80 +10,80 @@ const categories = [
   [ 
     { 
       id: 1, 
-      imgSrc1: item1, 
-      marka1: 'Mini LCW Chair', 
-      price1: 56, 
+      imgSrcc: item1, 
+      marka: 'Mini LCW Chair', 
+      priceofitem: 56, 
     }, 
     { 
       id: 2, 
-      imgSrc1: item2, 
-      marka1: 'Mini LCW Chair', 
-      price1: 56, 
+      imgSrcc: item2, 
+      marka: 'Mini LCW Chair', 
+      priceofitem: 56, 
     }, 
     { 
       id: 3, 
-      imgSrc1: item3, 
-      marka1: 'Mini LCW Chair', 
-      price1: 56, 
+      imgSrcc: item3, 
+      marka: 'Mini LCW Chair', 
+      priceofitem: 56, 
     }, 
     { 
       id: 4, 
-      imgSrc1: item4, 
-      marka1: 'Mini LCW Chair', 
-      price1: 56, 
+      imgSrcc: item4, 
+      marka: 'Mini LCW Chair', 
+      priceofitem: 56,
     }, 
   ], 
   [ 
     { 
       id: 2, 
-      imgSrc1: item2, 
-      marka1: 'Mini LCW Chair', 
-      price1: 56, 
+      imgSrcc: item2, 
+      marka: 'Mini LCW Chair', 
+      priceofitem: 56, 
     }, 
     { 
       id: 1, 
-      imgSrc1: item1, 
-      marka1: 'Mini LCW Chair', 
-      price1: 56, 
+      imgSrcc: item1, 
+      marka: 'Mini LCW Chair', 
+      priceofitem: 56, 
     }, 
     { 
       id: 4, 
-      imgSrc1: item4, 
-      marka1: 'Mini LCW Chair', 
-      price1: 56, 
+      imgSrcc: item4, 
+      marka: 'Mini LCW Chair', 
+      priceofitem: 56, 
     }, 
     { 
       id: 3, 
-      imgSrc1: item3, 
-      marka1: 'Mini LCW Chair', 
-      price1: 56, 
+      imgSrcc: item3, 
+      marka: 'Mini LCW Chair', 
+      priceofitem: 56, 
     }, 
   ], 
   [ 
     { 
       id: 3, 
-      imgSrc1: item3, 
-      marka1: 'Mini LCW Chair', 
-      price1: 56, 
+      imgSrcc: item3, 
+      marka: 'Mini LCW Chair', 
+      priceofitem: 56, 
     }, 
     { 
       id: 1, 
-      imgSrc1: item1, 
-      marka1: 'Mini LCW Chair', 
-      price1: 56, 
+      imgSrcc: item1, 
+      marka: 'Mini LCW Chair', 
+      priceofitem: 56, 
     }, 
     { 
       id: 2, 
-      imgSrc1: item2, 
-      marka1: 'Mini LCW Chair', 
-      price1: 56, 
+      imgSrcc: item2, 
+      marka: 'Mini LCW Chair', 
+      priceofitem: 56,
     }, 
  
     { 
       id: 4, 
-      imgSrc1: item4, 
-      marka1: 'Mini LCW Chair', 
-      price1: 56, 
+      imgSrcc: item4, 
+      marka: 'Mini LCW Chair', 
+      priceofitem: 56, 
     }, 
   ], 
 ]; 
@@ -96,7 +96,7 @@ export const TopCategories = () => {
       <h1>Top Categories</h1> 
       <div className="top-categories"> 
         {categories[chosenCategory].map((category, index) => ( 
-          <TopCategory imgSrc1={category.imgSrc1} marka1={category.marka1} price1={category.price1} /> 
+          <TopCategory key={category.id} imgSrcc={category.imgSrcc} marka={category.marka} priceofitem={category.priceofitem} /> 
         ))} 
       </div> 
       <div className="three-button"> 
