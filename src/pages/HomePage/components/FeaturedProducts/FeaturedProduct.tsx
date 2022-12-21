@@ -33,7 +33,9 @@ export const FeaturedProduct = (props: IFeaturedProductsProps) => {
         <img src={qalp} alt="" />
         <img src={lupaplus} alt="" />
       </div>
-      <button className="buttonnn">View Details</button>
+      <a href="/product-details">
+        <button className="buttonnn">View Details</button>
+      </a>
     </div>
   );
 };
