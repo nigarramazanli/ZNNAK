@@ -18,7 +18,9 @@ export const OrderCompleted = () => {
                   Thank you for your order! Your order is being processed and will be completed within 3-6
                   hours. You will receive an email confirmation when your order is completed.
                 </p>
+                <a href="/shopping-carts">
                 <button className="orderBtn">Continue Shopping</button>
+                </a>
               </div>
               <img className="check" src={check} alt="" />
             </div>
