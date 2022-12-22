@@ -1,10 +1,10 @@
 import './SignUpPage.scss';
 import * as yup from 'yup';
 import { SubmitHandler, useForm } from 'react-hook-form';
+import { baseUrl } from '../../constants';
 import { registerr } from './signupPageSlice';
 import { useDispatch } from 'react-redux';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { baseUrl } from '../../constants';
 
 interface signUpForm {
   username: string;
@@ -62,7 +62,7 @@ export const SignUpPage = () => {
             <p className="validation-error">{errors.email?.message}</p>
           </div>
           <div className={errors.password ? 'username-signup with-error' : 'username-signup'}>
-            <input type="password" placeholder="Password" {...register('password', { required: true })}/>
+            <input type="password" placeholder="Password" {...register('password', { required: true })} />
             <p className="validation-error">{errors.password?.message}</p>
           </div>
           <button type="submit" onClick={registerClickHandler}>

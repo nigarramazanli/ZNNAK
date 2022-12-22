@@ -3,8 +3,8 @@ import * as yup from 'yup';
 import { FaqItem } from './components/FaqItem';
 import { Logos } from '../HomePage/components/Logos/Logos';
 import { SubmitHandler, useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
 import { baseUrl } from '../../constants';
+import { yupResolver } from '@hookform/resolvers/yup';
 
 interface FaqFormData {
   name: string;

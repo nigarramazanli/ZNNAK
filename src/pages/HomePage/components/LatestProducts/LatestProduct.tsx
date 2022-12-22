@@ -25,9 +25,9 @@ export const LatestProduct = (props: ILatestProductProps) => {
         <img src={search} alt="" />
       </div>
       <div>
-      <span className="titlee">{title}</span>
-      <span className="newprice">${newPrice}.00</span>
-      <span className="price">${price}.00</span>
+        <span className="titlee">{title}</span>
+        <span className="newprice">${newPrice}.00</span>
+        <span className="price">${price}.00</span>
       </div>
     </div>
   );

@@ -178,19 +178,14 @@ margin-bottom: 46px;
         background-color: $color2;
         border-radius: 3px;
         border-color: $color2;
-        p{
-            font-family: $font-family5;
-            color: $white;
-        }
+        color:$white;
+        font-family: $font-family5;
+        color: $white;
     }      
     .send:hover{
         background-color: $white;
-        p{
-            color:$color2;
-        }
+        color:$color2;
     }
-
-
 .name{
   display: flex;
   gap: 23px;

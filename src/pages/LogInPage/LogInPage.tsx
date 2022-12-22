@@ -1,8 +1,8 @@
 import './LogInPage.scss';
 import * as yup from 'yup';
 import { SubmitHandler, useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
 import { baseUrl } from '../../constants';
+import { yupResolver } from '@hookform/resolvers/yup';
 
 interface LogInFormData {
   email: string;

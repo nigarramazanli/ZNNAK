@@ -47,3 +47,8 @@
   margin-top: 67px;
   cursor: pointer;
 }
+.right-part button:hover{
+  background-color: $white;
+  color:$color2;
+  border:1px solid $color2;
+}

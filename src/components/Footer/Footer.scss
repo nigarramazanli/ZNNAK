@@ -70,8 +70,15 @@ font-weight: 500;
 font-size: 16px;
 line-height: 19px;
 color: $bg-color3;
-margin-left: 5px;
+margin-left: 12px;
 }
+.butone:hover{
+    background-color: $white;
+    color:$color2;
+    border:1px solid $color2;
+}
+
+
 .hektoone{
     height: 38px;
 width: 110px;

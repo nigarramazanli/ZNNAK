@@ -1,6 +1,7 @@
 import './DiscountItem.scss';
 import item from './photo/vector-2.png';
 import tortuga from './photo/tortuga-01-b 1.png';
+
 export const DiscountItem = () => {
   return (
     <div className="discount-general-container">
@@ -41,7 +42,9 @@ export const DiscountItem = () => {
                 </div>
               </div>
             </div>
-            <button className="shopname">Shop now</button>
+            <a href="/grid-default">
+              <button className="shopname">Shop now</button>
+            </a>
           </div>
           <div className="sofa">
             <div className="sofa-circle">

@@ -6,6 +6,7 @@ import { Footer } from './components/Footer/Footer';
 import { GridDefault } from './pages/GridDefault/GridDefault';
 import { Header } from './components/Header/Header';
 import { HomePage } from './pages/HomePage/HomePage';
+import { LogInPage } from './pages/LogInPage/LogInPage';
 import { NotFound } from './pages/NotFound/NotFound';
 import { OrderCompleted } from './pages/OrderCompleted/OrderCompleted';
 import { ProductDetails } from './pages/ProductDetails/ProductDetails';
@@ -14,7 +15,6 @@ import { Route, Routes } from 'react-router-dom';
 import { ShoppingCarts } from './pages/ShoppingCarts/ShoppingCarts';
 import { SignUpPage } from './pages/SignUpPage/SignUpPage';
 import React from 'react';
-import { LogInPage } from './pages/LogInPage/LogInPage';
 
 export const App = () => {
   return (

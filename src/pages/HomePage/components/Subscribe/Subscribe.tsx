@@ -10,7 +10,9 @@ export const Subscribe = () => {
           <br />
           Our Newslater
         </p>
-        <button className="subscribe-button">Shop now</button>
+        <a href="/grid-default">
+          <button className="subscribe-button">Shop now</button>
+        </a>
       </div>
     </div>
   );
