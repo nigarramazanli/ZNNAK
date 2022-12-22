@@ -1,3 +1,6 @@
+
+import { useState } from 'react';
+
 interface IShoppingCartProps {
   shoppingCartProduct: string;
   btnx: string;
@@ -12,6 +15,19 @@ interface IShoppingCartProps {
   belowLine: string;
 }
 export const ShoppingCart = (props: IShoppingCartProps) => {
+  const price = 32;
+  const [totalValue, setTotalValue] = useState(0);
+  const [amount, setAmount] = useState(0);
+
+  const increaseHandler = () => {
+    setTotalValue((prev) => prev + price);
+    setAmount((prev) => prev + 1);
+  };
+  const decreaseHandler = () => {
+    setTotalValue((prev) => prev - price);
+    setAmount((prev) => prev - 1);
+  };
+
   const {
     shoppingCartProduct,
     btnx,
@@ -39,11 +55,15 @@ export const ShoppingCart = (props: IShoppingCartProps) => {
         </div>
         <p className="shopping-cart-price">${shoppingCartPrice}.00</p>
         <div className="shopping-cart-button">
-          <button className="minus-btn">{minusBtn}</button>
-          <p className="number-of-items">{numberOfItems}</p>
-          <button className="plus-btn">{plusBtn}</button>
+          <button className="minus-btn" onClick={decreaseHandler}>
+            {minusBtn}
+          </button>
+          <p className="number-of-items">{amount}</p>
+          <button className="plus-btn" onClick={increaseHandler}>
+            {plusBtn}
+          </button>
         </div>
-        <p className="total-price">${totalPrice}.00</p>
+        <p className="total-price">${totalValue}.00</p>
       </div>
       <img className="below-line" src={belowLine} alt="" />
     </div>

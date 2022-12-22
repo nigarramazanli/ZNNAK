@@ -80,7 +80,7 @@
     background: $bg-color1;
     width: 51px;
 height: 15px;
-margin-right: 140px;
+margin-right: 100px;
 }
 
 .shopping-cart-product{
@@ -88,8 +88,8 @@ margin-right: 140px;
 }
 .btnx{
     position: relative;
-    bottom: 80px;
-    right: 7px;
+    bottom: 81px;
+    right: 6px;
 }
 
 .product-name{
@@ -115,7 +115,9 @@ margin-bottom: 7px;
 font-size: 14px;
 line-height: 16px;
 color: $color1;
+width: 70px;
 }
+
 
 .minus-btn , .plus-btn{
     background: $bg-color19;
@@ -148,7 +150,7 @@ justify-content: center;
     width: 206px;
 }
 .shopping-cart-price{
-    margin-right: 122px;
+    margin-right: 100px;
 }
 .below-line{
     border: 0px solid $bg-color24;
@@ -311,4 +313,7 @@ margin-top: 45px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+.total-price{
+    text-align: end;
 }
