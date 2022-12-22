@@ -26,7 +26,7 @@
     color: $sign-in-color; 
     margin-top: -14px; 
 } 
-form{ 
+.loginpage-container form{ 
     margin-top: 51px; 
 } 
  .email-form1 { 
@@ -81,6 +81,7 @@ form{
     line-height: 20.4px; 
     border-color:$color2 ; 
     margin-top: 23px; 
+    cursor: pointer;
 } 
 .account p{ 
  font-family: $font-family3; 

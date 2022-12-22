@@ -15,7 +15,9 @@ export const FirstPart = () => {
             malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus
             vitae lobortis quis bibendum quam.
           </p>
-          <button>Contact Us</button>
+          <a href="/contact-us">
+            <button>Contact Us</button>
+          </a>
         </div>
       </div>
     </div>

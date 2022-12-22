@@ -1,21 +1,26 @@
 @import "../../../../variables";
-.NotFoundPage{
+
+.NotFoundPage {
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
 }
-.not-found-image{
+
+.not-found-image {
     max-width: 913px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-.not-found-image p{
+
+.not-found-image p {
     font-family: $font-family5;
     font-size: 24px;
     line-height: 28.13px;
     color: $color1;
-}.not-found-image button{
+}
+
+.not-found-image button {
     background-color: $color2;
     width: 165px;
     height: 44px;
@@ -25,4 +30,11 @@
     line-height: 25.6px;
     color: $white;
     border-color: $color2;
+    cursor: pointer;
+}
+
+.not-found-image button:hover {
+    background-color: $white;
+    color: $color2;
+    border: 1px solid $color2;
 }

@@ -25,7 +25,9 @@ export const Unique = () => {
             <span className="unique-text-three">Arms, backs and seats are structurally reinforced</span>
           </div>
           <div className="button-and-value">
-            <button className="button-add">Add To Cart</button>
+            <a href="/shopping-carts">
+              <button className="button-add">Add To Cart</button>
+            </a>
             <div className="brend-value">
               <p className="brend">B&B Italian Sofa </p>
               <p className="value">$32.00</p>
