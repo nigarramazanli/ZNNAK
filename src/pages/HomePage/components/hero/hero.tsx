@@ -33,7 +33,7 @@ export const Hero = () => {
               </p>
             </div>
             <div className="button-hero">
-              <Link to="./grid-default" className="shop">
+              <Link to="./shop" className="shop">
                 Shop Now
               </Link>
             </div>

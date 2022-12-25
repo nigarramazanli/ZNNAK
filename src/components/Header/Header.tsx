@@ -68,7 +68,7 @@ export const Header = () => {
             <Link to="./faq" className="nav-link">
               Faq
             </Link>
-            <Link to="/grid-default" className="nav-link">
+            <Link to="/shop" className="nav-link">
               Shop
             </Link>
             <Link to="./contact-us" className="nav-link">

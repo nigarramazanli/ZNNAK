@@ -23,7 +23,7 @@ export const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/grid-default" element={<GridDefault />} />
+          <Route path="/shop" element={<GridDefault />} />
           <Route path="/product-details" element={<ProductDetails />} />
           <Route path="/shopping-carts" element={<ShoppingCarts />} />
           <Route path="/order-completed" element={<OrderCompleted />} />

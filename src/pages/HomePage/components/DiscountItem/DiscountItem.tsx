@@ -42,7 +42,7 @@ export const DiscountItem = () => {
                 </div>
               </div>
             </div>
-            <a href="/grid-default">
+            <a href="/shop">
               <button className="shopname">Shop now</button>
             </a>
           </div>

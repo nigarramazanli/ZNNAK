@@ -1,14 +1,14 @@
 @import '../../variables';
 
-.product-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 81px 53px;
+.product-list {
   .boxes-grid {
-    width: 273px;
-    height: 363px;
+    box-shadow: $box-shadow;
+    height: 280px;
+    margin-bottom: 81px;
+    margin-right: 53px;
     .chair-box-grid {
-      position: relative;
+      box-shadow: $box-shadow;
+      position: absolute;
       width: 270px;
       height: 280px;
       margin-bottom: 18px;
@@ -18,14 +18,18 @@
       }
     }
     .about-grid {
-      text-align: center;
+      position: relative;
       .about-title-grid {
+        margin-left: 300px;
+        padding-top: 30px;
         font-family: $font-family5;
         color: $color1;
         margin-bottom: 8px;
       }
       .color-button-grid {
-        justify-content: center;
+        position: absolute;
+        margin-left: 150px;
+        padding-top: -40px;
         display: flex;
         margin-bottom: 15px;
         gap: 6px;
@@ -52,7 +56,7 @@
         }
       }
       .price-grid {
-        justify-content: center;
+        margin-left: 300px;
         display: flex;
         gap: 10px;
 
@@ -66,38 +70,24 @@
           color: $color2;
         }
       }
-    }
-  }
-  .boxes-grid:hover {
-    .chair-box-grid {
-      background-color: $bg-color29;
-    }
-    .icon-grid {
-      position: absolute;
-      display: block;
-      .icon-button {
-        display: block;
-      }
-      .icon-button:hover {
-        display: block;
-        background-color: $white;
+      .text-grid {
+        color: #9295aa;
+        margin-left: 300px;
       }
     }
   }
-  .icon-grid {
+
+  .iconss-grid {
     cursor: pointer;
-    display: none;
-    width: 30px;
-    margin-top: -235px;
-    margin-left: 11px;
+    margin-left: 300px;
     .icon-button {
-      display: none;
+      height: 18px;
       border-radius: 50%;
-      padding: 11px;
+      padding: 16px;
     }
     .icon-button:hover {
-      display: none;
       background-color: $white;
+      box-shadow: $box-shadow;
     }
   }
 }
