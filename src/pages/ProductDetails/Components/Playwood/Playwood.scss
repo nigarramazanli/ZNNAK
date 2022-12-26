@@ -17,11 +17,23 @@
 }
 
 .image-first-column{
+    padding:13px;
     display: flex;
     flex-direction: column;
     gap: 11px;
 }
+.image-second-column{
+    border-radius: 5px;
+    background-color: #c4c4c4;
+    margin: 13px 0;
+}
+.image-second-column img{
+    width: 350px;
+    margin-top: 100px;
+}
 .image-first-column img{
+    border-radius: 5px;
+    background-color: #c4c4c4;
     width: 151px;
     height: 155px;
 }

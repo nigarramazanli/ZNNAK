@@ -1,3 +1,5 @@
+import { useDispatch } from 'react-redux';
+import { addProductToCart } from '../../../ShoppingCarts/cartSlice';
 import fav from './fav.png';
 import search from './search.png';
 import shop from './shop.png';
@@ -5,24 +7,37 @@ import shop from './shop.png';
 interface ILatestProductProps {
   imgSrc: string;
   title: string;
-  imgclass: string;
+  imgClass: string;
   newPrice: number;
   price: number;
 }
+const product = {
+      
+};
 
 export const LatestProduct = (props: ILatestProductProps) => {
-  const { imgSrc, title, imgclass, newPrice, price } = props;
+  const { imgSrc, title, imgClass, newPrice, price } = props;
+  const dispatch = useDispatch();
+
+  const handleAddToCart = () => {
+    //dispatch(addProductToCart(product));
+  };
+
   return (
     <div className="grid-item">
-      <div className="cardd">
-        <img src={imgSrc} className={imgclass} alt="" />
+      <div className="card">
+        <img src={imgSrc} className={imgClass} alt="" />
       </div>
       <div className="icon">
-        <div>
+        <button className="add-to-cart" onClick={handleAddToCart}>
           <img src={shop} alt="" />
-        </div>
-        <img src={fav} alt="" />
-        <img src={search} alt="" />
+        </button>
+        <button className="add-to-favorite">
+          <img src={fav} alt="" />
+        </button>
+        <button className="add-to-compare">
+          <img src={search} alt="" />
+        </button>
       </div>
       <div>
         <span className="titlee">{title}</span>

@@ -24,7 +24,7 @@ export const Hero = () => {
               <h1 className="title">
                 New Furniture Collection
                 <br />
-                Trends in 2020
+                Trends in 2022
               </h1>
               <p className="second-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing

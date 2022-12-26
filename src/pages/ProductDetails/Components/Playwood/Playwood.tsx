@@ -2,10 +2,10 @@ import './Playwood.scss';
 import facebook from './photos/Group 202.svg';
 import heart from './photos/Vector (5).svg';
 import instagram from './photos/Group 203.svg';
-import leftimg1 from './photos/Rectangle 134.png';
-import leftimg2 from './photos/Rectangle 136.png';
-import leftimg3 from './photos/Rectangle 137.png';
-import rightimg from './photos/Rectangle 138.png';
+import leftimg1 from '../../../HomePage/components/FeaturedProducts/chair1.png';
+import leftimg2 from '../../../HomePage/components/FeaturedProducts/chair2.png';
+import leftimg3 from '../../../HomePage/components/FeaturedProducts/chair3.png';
+import rightimg from '../../../HomePage/components/hero/photo/armchair.png';
 import twitter from './photos/Group 204.svg';
 
 export const Playwood = () => {
@@ -40,9 +40,15 @@ export const Playwood = () => {
             </div>
           </div>
           <span className="twenty-two">(22)</span> <br />
-          <span className="price-cat-tag">$32.00</span>
-          <span className="price-pink">$32.00</span>
-          <p className="color-blue">Color</p>
+          <span className="price-cat-tag">$55.00</span>
+          <span className="price-pink">
+            <del>
+              <b>$75.00</b>
+            </del>
+          </span>
+          <p className="color-blue">
+            <b>Color</b>
+          </p>
           <p className="playwood-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et
             volutpat sit.
@@ -51,10 +57,16 @@ export const Playwood = () => {
             <p>Add To Cart</p>
             <img src={heart} alt="" />
           </div>
-          <p className="price-cat-tag">Categories:</p>
-          <p className="price-cat-tag">Tags</p>
+          <p className="price-cat-tag">
+            <b>Categories:</b>
+          </p>
+          <p className="price-cat-tag">
+            <b>Tags</b>
+          </p>
           <div className="sharing">
-            <span className="price-cat-tag">Share</span>
+            <span className="price-cat-tag">
+              <b>Share</b>
+            </span>
             <div className="social-media-icons">
               <img src={facebook} alt="" />
               <img src={instagram} alt="" />

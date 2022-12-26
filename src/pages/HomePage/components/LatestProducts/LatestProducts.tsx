@@ -23,42 +23,42 @@ export const LatestProducts = () => {
           title={'Comfort Handy Craft'}
           newPrice={42}
           price={67}
-          imgclass={'img1'}
+          imgClass={'img1'}
         />
         <LatestProduct
           imgSrc={item2}
           title={'Comfort Handy Craft'}
           newPrice={42}
           price={67}
-          imgclass={'img2'}
+          imgClass={'img2'}
         />
         <LatestProduct
           imgSrc={item3}
           title={'Comfort Handy Craft'}
           newPrice={42}
           price={67}
-          imgclass={'img3'}
+          imgClass={'img3'}
         />
         <LatestProduct
           imgSrc={item5}
           title={'Comfort Handy Craft'}
           newPrice={42}
           price={67}
-          imgclass={'img4'}
+          imgClass={'img4'}
         />
         <LatestProduct
           imgSrc={item4}
           title={'Comfort Handy Craft'}
           newPrice={42}
           price={67}
-          imgclass={'img5'}
+          imgClass={'img5'}
         />
         <LatestProduct
           imgSrc={item6}
           title={'Comfort Handy Craft'}
           newPrice={42}
           price={67}
-          imgclass={'img6'}
+          imgClass={'img6'}
         />
       </div>
     </div>

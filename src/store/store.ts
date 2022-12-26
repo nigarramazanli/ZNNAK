@@ -1,3 +1,4 @@
+import { cartPageReducer } from '../pages/ShoppingCarts/cartSlice';
 import { configureStore } from '@reduxjs/toolkit';
 import { headerReducer } from '../components/Header/headerSlice';
 import { profileReducer } from '../pages/ProfilePage/profilePageSlice';
@@ -8,6 +9,7 @@ export const store = configureStore({
         header: headerReducer,
         profilePage: profileReducer,
         signupPage: signupPageReducer,
+        cartPage: cartPageReducer,
     },
 });
 

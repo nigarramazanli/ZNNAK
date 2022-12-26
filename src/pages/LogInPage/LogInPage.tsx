@@ -3,20 +3,26 @@ import * as yup from 'yup';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { baseUrl } from '../../constants';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { setValueInLocalStorage } from '../../services/localStorage.service';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { registerr } from '../SignUpPage/signupPageSlice';
 
 interface LogInFormData {
-  email: string;
+  username: string;
   password: string;
 }
 
 const schema = yup
   .object({
-    email: yup.string().required('You must enter your email'),
+    username: yup.string().required('You must enter your email'),
     password: yup.string().required('You must enter your password'),
   })
   .required();
 
 export const LogInPage = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const {
     register,
     handleSubmit,
@@ -25,14 +31,24 @@ export const LogInPage = () => {
     resolver: yupResolver(schema),
   });
   const onSubmit: SubmitHandler<LogInFormData> = (data) => {
-    console.log(data);
-    fetch(`${baseUrl}/users`, {
+    fetch(`${baseUrl}/auth/login`, {
       method: 'POST',
       body: JSON.stringify(data),
       headers: { 'Content-Type': 'application/json' },
     })
       .then((response) => response.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        setValueInLocalStorage('accessToken', data.access_token);
+        dispatch(
+          registerr({
+            name: 'Nigar',
+            lastName: 'Akbarli',
+            email: 'mail@mail.com',
+            password: '12345',
+          }),
+        );
+        navigate('/');
+      });
   };
 
   return (
@@ -44,15 +60,15 @@ export const LogInPage = () => {
             <p>Please login using account detail bellow.</p>
           </div>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <div className={errors.email ? 'email-form withError' : 'email-form'}>
+            <div className={errors.username ? 'email-form withError' : 'email-form'}>
               <label>
                 <input
                   className="email-form1"
                   type="text"
                   placeholder="Email Addres"
-                  {...register('email', { required: true })}
+                  {...register('username', { required: true })}
                 />
-                <p className="validation-Error">{errors.email?.message}</p>
+                <p className="validation-Error">{errors.username?.message}</p>
               </label>
             </div>
             <div className={errors.password ? 'password-form withError' : 'password-form'}>

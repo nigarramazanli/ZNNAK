@@ -35,7 +35,7 @@ export const Header = () => {
               </div>
               <div className="user-act">
                 {headerState.currentUser ? (
-                  <div>
+                  <div className="current-user">
                     {headerState.currentUser.name} {headerState.currentUser.lastName}
                   </div>
                 ) : (
@@ -49,7 +49,9 @@ export const Header = () => {
                 <p className="numphon">Wishlist</p>
                 <img className="heart" src={heart} alt="" />
               </div>
-              <img className="korzina" src={korzina} alt="" />
+              <Link to="/shopping-carts">
+                <img className="korzina" src={korzina} alt="" />
+              </Link>
             </div>
           </div>
         </div>
@@ -59,9 +61,6 @@ export const Header = () => {
             <a className="navlink" href="/">
               Home <img className="little-vector" src={vector} alt="" />
             </a>
-            <Link to="/not-found" className="nav-link">
-              Pages
-            </Link>
             <Link to="/about-us" className="nav-link">
               About us
             </Link>

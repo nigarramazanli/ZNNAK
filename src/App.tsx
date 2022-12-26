@@ -14,9 +14,24 @@ import { ProfilePage } from './pages/ProfilePage/ProfilePage';
 import { Route, Routes } from 'react-router-dom';
 import { ShoppingCarts } from './pages/ShoppingCarts/ShoppingCarts';
 import { SignUpPage } from './pages/SignUpPage/SignUpPage';
-import React from 'react';
+import { baseUrl } from './constants';
+import { getValueFromLocalStorage } from './services/localStorage.service';
+import React, { useEffect } from 'react';
 
 export const App = () => {
+  useEffect(() => {
+    const requestHeaders: HeadersInit = new Headers();
+    requestHeaders.set('Content-Type', 'application/json');
+
+    const token = getValueFromLocalStorage('accessToken');
+    if (token) {
+      requestHeaders.set('Authorization', `Bearer ${token}`);
+    }
+
+    fetch(`${baseUrl}/users/current`, { headers: requestHeaders })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+  }, []);
   return (
     <div className="App">
       <Header />

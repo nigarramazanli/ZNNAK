@@ -21,7 +21,7 @@ export const HomePage = () => {
       <Unique />
       <TrendingProduct />
       <DiscountItem />
-      <TopCategories />
+      {/* <TopCategories /> */}
       <Subscribe />
       <Logos />
       <LeatestBlog />
